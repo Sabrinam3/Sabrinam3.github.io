@@ -22,7 +22,7 @@ function App() {
           </div>
 
         </div>
-        <video src={heroVideo} autoPlay muted></video>
+        <video src={heroVideo} autoPlay muted controls></video>
 
   
 
