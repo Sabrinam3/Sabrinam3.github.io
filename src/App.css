@@ -117,3 +117,45 @@ nav{
     visibility: visible;
   }
 }
+
+/* Media Queries */
+@media screen and (max-width: 600px ) {
+  .App-logo{
+    width: 30%;
+  }
+
+  .nav-slogan{
+    width: 100%;
+    text-align: center;
+  }
+  .nav-tel{
+    width:100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+  nav{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  video{
+    display: none;
+  }
+
+  .video-overlay{
+    margin: 0;
+    border-radius: 0; 
+    position: inherit;
+  }
+
+  .App-header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .App-header h1{
+    font-size: 1.9em;
+  }
+}
