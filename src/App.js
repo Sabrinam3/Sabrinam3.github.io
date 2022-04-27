@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <nav>
       <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
-      <p className="nav-slogan">Getting the Job Done <span className="nav-emphasis">Right</span> the <span className="nav-emphasis">First Time</span></p>
+      <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p>
       <div className="nav-tel">
         <p>(519) 859-9458</p>
         <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
@@ -22,7 +22,7 @@ function App() {
           </div>
 
         </div>
-        <video src={heroVideo} autoPlay muted controls></video>
+        <video src={heroVideo} autoPlay muted loop></video>
 
   
 

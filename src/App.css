@@ -9,13 +9,13 @@ body{
 }
 
 :root {
-  --tp-dark-blue: rgb(2,5,64);
-  --tp-accent-blue: #4ABEB0;
+  --tp-dark-blue: rgb(13, 6, 33);
+  --tp-accent-blue: #3fab9e;
 }
 
 /* Nav Styling */
 .App-logo {
-  width: 100px;
+  width: 200px;
 }
 nav{
   background-color: var(--tp-dark-blue);
@@ -23,6 +23,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   color: #f0f0f0;
+  padding: 0.5em;
 }
 
 .nav-slogan{
@@ -98,8 +99,8 @@ nav{
   z-index: 2;
   /* background-color: rgba(241, 241, 241, 0.8); */
   /* box-shadow: rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset, rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset; */
-  box-shadow:  12px 12px 15px #050533,
-             -12px -12px 15px #05053d;
+  /* box-shadow:  12px 12px 15px #050533,
+             -12px -12px 15px #05053d; */
 }
 .video-overlay div{
   padding: 2em;
@@ -160,5 +161,10 @@ nav{
 
   .App-header h1{
     font-size: 2.5em;
+    animation: none;
+  }
+
+  .App-header p{
+    animation: none;
   }
 }
