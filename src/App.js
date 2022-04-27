@@ -13,7 +13,7 @@ function stickyNav() {
   const secondaryNavMobile = document.getElementById("secondary-nav-mobile");
   if(isMobile)
   {
-    if(window.pageYOffset > 125)
+    if(window.pageYOffset > 100)
     {
       secondaryNavMobile.style.position = "fixed";
       secondaryNavMobile.style.top = "0";
