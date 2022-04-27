@@ -1,5 +1,6 @@
 import logo from './assets/images/logo.png';
 import heroVideo from './assets/video/hero.mp4';
+import phone from './assets/images/phone.svg';
 
 import './App.css';
 
@@ -10,10 +11,17 @@ function App() {
       <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
       <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p>
       <div className="nav-tel">
+        <div className="contact-mobile-span">
+          <button className="button1">Contact Us</button>
+        </div>
         <p>(519) 859-9458</p>
         <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
       </div>
       </nav>
+      <div className="contact-mobile-bar">
+        <img src={phone} alt="Call Now Icon"/>
+        <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
+      </div>
       <header className="App-header">
         <div className="video-overlay">
           <div>
