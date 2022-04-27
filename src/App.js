@@ -1,11 +1,29 @@
 import logo from './assets/images/logo.png';
+import logosmall from './assets/images/logo-small.png';
 import heroVideo from './assets/video/hero.mp4';
 import phone from './assets/images/phone.svg';
 
+
 import './App.css';
 
+document.addEventListener("scroll", stickyNav);
+function stickyNav() {
+  const element = document.getElementById("secondary-nav");
+  if (window.pageYOffset > 125)
+  {
+    element.style.display = "block";
+    element.style.position = "fixed";
+    element.style.top = "0";
+    element.style.left = "0";
+  }
+  else
+  {
+    element.style.display = "none";
+  }
+}
 function App() {
   return (
+    
     <div className="App">
       <nav>
       <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
@@ -22,6 +40,15 @@ function App() {
         <img src={phone} alt="Call Now Icon"/>
         <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
       </div>
+      <div id="secondary-nav">
+      <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
+    </div>
+    
+     
+      
+ 
+      
+      
       <header className="App-header">
         <div className="video-overlay">
           <div>

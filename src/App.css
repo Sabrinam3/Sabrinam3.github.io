@@ -6,6 +6,7 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 :root {
@@ -54,7 +55,7 @@ nav{
 .nav-tel p{
   margin:0.3em;
 }
-.nav-tel p:first-child{
+.nav-tel p:nth-of-type(1){
   font-size:1.6em;
   animation: pulse 2s infinite;
   text-align: center;
@@ -72,6 +73,22 @@ nav{
   display: none;
 }
 
+#secondary-nav {
+  display: none;
+  z-index: 999;
+  background-color: var(--tp-dark-blue);
+  width:100%;
+  animation: fade 2s;
+  animation-fill-mode: forwards;
+}
+
+#secondary-nav img{
+  width: 10%;
+}
+
+
+
+
 /* Header/Hero */
 .App-header {
   /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/hero.jpeg');
@@ -84,7 +101,7 @@ nav{
 }
 
 .App-header video{
-  filter: brightness(40%);
+  filter: brightness(50%);
   width: 100%;
 }
 
@@ -135,6 +152,14 @@ nav{
 @keyframes reveal {
   to{
     visibility: visible;
+  }
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.7;
   }
 }
 
