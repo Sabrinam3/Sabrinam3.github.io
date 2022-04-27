@@ -13,6 +13,17 @@ body{
   --tp-accent-blue: #3fab9e;
 }
 
+/* Common Components */
+.button1{
+  border: 1px solid var(--tp-accent-blue);
+  background-color: transparent;
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', serif;
+  color: #f0f0f0;
+  box-shadow: 0px 0px 8px 0.5px var(--tp-accent-blue) inset;
+}
+
 /* Nav Styling */
 .App-logo {
   width: 200px;
@@ -130,7 +141,7 @@ nav{
 /* Media Queries */
 @media screen and (max-width: 600px ) {
   .App-logo{
-    width: 25%;
+    width: 35%;
     margin: 0.5em;
   }
 
@@ -148,15 +159,7 @@ nav{
 .contact-mobile-span{
   display: inherit;
 }
-.button1{
-  border: 1px solid var(--tp-accent-blue);
-  background-color: transparent;
-  padding: 0.6em 1.2em;
-  border-radius: 5px;
-  font-family: 'Source Sans Pro', serif;
-  color: #f0f0f0;
-  box-shadow: 0px 0px 8px 0.5px var(--tp-accent-blue) inset;
-}
+
 .contact-mobile-bar img{
   width: 20px;
   margin: 0.5em 1em;
@@ -177,9 +180,6 @@ nav{
   display: flex;
   align-items: center;
 }
-  /* video{
-    display: none;
-  } */
 
   .video-overlay{
     margin: 0;
@@ -187,20 +187,14 @@ nav{
     box-shadow: none;
   }
 
-  /* .App-header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/hero.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-  } */
-
   .App-header h1{
-    font-size: 2.5em;
+    font-size: 1.5em;
     animation: none;
   }
 
   .App-header p{
     animation: none;
     visibility: visible;
+    font-size: 1em;
   }
 }
