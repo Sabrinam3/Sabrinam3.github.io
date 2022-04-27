@@ -43,12 +43,6 @@ function App() {
       <div id="secondary-nav">
       <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
     </div>
-    
-     
-      
- 
-      
-      
       <header className="App-header">
         <div className="video-overlay">
           <div>
@@ -57,6 +51,9 @@ function App() {
           </div>
         </div>
           <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
+        <main>
+          
+        </main>
 
   
 

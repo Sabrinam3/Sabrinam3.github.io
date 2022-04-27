@@ -146,6 +146,11 @@ nav{
   color: #61dafb;
 }
 
+/* Main */
+main{
+  background-color: #ccc;
+  height:1000px;
+}
 
 
 /* Animations */
