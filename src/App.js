@@ -28,9 +28,8 @@ function App() {
             <h1>ThieLot Painting<span>.</span></h1>
             <p>Premiere Residential and Commercial Painting Services</p>
           </div>
-
         </div>
-        <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
+          <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
 
   
 
