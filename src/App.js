@@ -8,18 +8,35 @@ import './App.css';
 
 document.addEventListener("scroll", stickyNav);
 function stickyNav() {
-  const element = document.getElementById("secondary-nav");
-  if (window.pageYOffset > 125)
+  const isMobile = !window.matchMedia('only screen and (min-width: 600px)').matches;
+  const secondaryNav = document.getElementById("secondary-nav");
+  const secondaryNavMobile = document.getElementById("secondary-nav-mobile");
+  if(isMobile)
   {
-    element.style.display = "block";
-    element.style.position = "fixed";
-    element.style.top = "0";
-    element.style.left = "0";
+    if(window.pageYOffset > 125)
+    {
+      secondaryNavMobile.style.position = "fixed";
+      secondaryNavMobile.style.top = "0";
+      secondaryNavMobile.style.left = "0";
+    }
+    else
+    {
+      secondaryNavMobile.style.position = "inherit";
+    }
   }
-  else
-  {
-    element.style.display = "none";
-  }
+  else{
+    if(window.pageYOffset > 125)
+    {
+      secondaryNav.style.display = "block";
+      secondaryNav.style.position = "fixed";
+      secondaryNav.style.top = "0";
+      secondaryNav.style.left = "0";
+    }
+    else
+    {
+      secondaryNav.style.display = "none";
+    }
+  } 
 }
 function App() {
   return (
@@ -36,7 +53,7 @@ function App() {
         <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
       </div>
       </nav>
-      <div className="contact-mobile-bar">
+      <div className="contact-mobile-bar" id="secondary-nav-mobile">
         <img src={phone} alt="Call Now Icon"/>
         <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
       </div>
@@ -52,7 +69,7 @@ function App() {
         </div>
           <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
         <main>
-          
+
         </main>
 
   
