@@ -31,6 +31,9 @@ function App() {
           <div>
             <h1>ThieLot Painting<span>.</span></h1>
             <p>Premiere Residential and Commercial Painting Services</p>
+            <div className="contact-desktop-span">
+              <button className="button1">Contact Us</button>
+            </div>
           </div>
         </div>
           <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>

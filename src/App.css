@@ -12,17 +12,40 @@ body{
 :root {
   --tp-dark-blue: rgb(13, 6, 33);
   --tp-accent-blue: #3fab9e;
+  --tp-accent-hover: #65bcb1;
+  --base-shadow: rgba(0, 0, 0, 0.12);
+  --blue-shadow-from: #3fab9e;
+  --blue-shadow-to: #1f554f;
+  --blue-box-shadow:  0 14px 26px -12px var(--blue-shadow-from), 0 4px 23px 0px var(--base-shadow), 0 8px 10px -5px var(--blue-shadow-to);
 }
 
 /* Common Components */
 .button1{
-  border: 1px solid var(--tp-accent-blue);
-  background-color: transparent;
-  padding: 0.8em 2em;
+  border: none;
+  background-color: var(--tp-accent-blue);
+  padding: 0.5em 1.8em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
+  font-weight: bolder;
   color: #f0f0f0;
-  box-shadow: 0px 0px 8px 0.5px var(--tp-accent-blue) inset;
+  font-size: 1em;
+}
+
+.button1:hover{
+  background-color: var(--tp-accent-hover);
+  box-shadow: var(--blue-box-shadow);
+}
+
+.button2{
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--tp-accent-blue);
+  padding: 0.5em 1.8em;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: bolder;
+  color: #f0f0f0;
+  font-size: 1em;
 }
 
 /* Nav Styling */
@@ -81,7 +104,19 @@ nav{
 }
 
 
+
 /* Header/Hero */
+.video-overlay {
+  padding: 3em;
+  position: absolute;
+  border-radius: 25px;
+  margin: 8em;
+  z-index: 2;
+  /* background-color: rgba(241, 241, 241, 0.8); */
+  /* box-shadow: rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset, rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset; */
+  /* box-shadow:  12px 12px 15px #050533,
+             -12px -12px 15px #05053d; */
+}
 .App-header {
   /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/hero.jpeg');
   background-size: cover;
@@ -97,45 +132,44 @@ nav{
   width: 100%;
 }
 
+.App-header span{
+  color: var(--tp-accent-blue);
+  font-size: 1em;
+}
 .App-header h1{
   font-size: 3.5em;
   color: #fff;
   animation: fadeInUp 2s;
 }
-.App-header span{
-  color: var(--tp-accent-blue);
-  font-size: 1.2em;
-}
-
 .App-header p{
   font-family: 'Playfair Display', serif;
   color: #f0f0f0;
-  font-size: 1.3em;
-  padding: 0.8em 0;
+  font-size: 1.4em;
+  margin-top: 0.5em;
+  font-weight: 500;
   animation-name: fadeInUp, reveal;
   visibility: hidden;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
-
-.video-overlay {
-  padding: 3em;
-  position: absolute;
-  border-radius: 25px;
-  margin: 8em;
-  z-index: 2;
-  /* background-color: rgba(241, 241, 241, 0.8); */
-  /* box-shadow: rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset, rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset; */
-  /* box-shadow:  12px 12px 15px #050533,
-             -12px -12px 15px #05053d; */
+.App-header button{
+  margin-top: 2em;
 }
-.video-overlay div{
+
+.video-overlay div:first-child{
   padding: 2em;
   border-left: 4px solid var(--tp-accent-blue);
 }
 .App-link {
   color: #61dafb;
+}
+.contact-desktop-span{
+  animation-name: fadeInUp, reveal;
+  visibility: hidden;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
 }
 
 /* Main */
@@ -161,7 +195,16 @@ main{
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px ) {
+@media screen and (max-width: 900px ) {
+  .App-header video{
+    min-height:500px;
+    object-fit: initial;
+  }
+  .video-overlay{
+    margin: 2em; 
+  }
+}
+@media screen and (max-width: 700px ) {
   .App-logo{
     width: 25%;
     margin: 0.5em;
@@ -178,52 +221,44 @@ main{
     justify-content: space-between;
     padding: 0;
   }
-.contact-mobile-span{
-  display: inherit;
-}
+  .contact-mobile-span{
+    display: inherit;
+  }
+  .contact-desktop-span{
+    display: none;
+  }
 
-.contact-mobile-bar img{
-  width: 30px;
-  margin: 0.5em 1em;
-}
+  .contact-mobile-bar img{
+    width: 30px;
+    margin: 0.5em 1em;
+  }
 
-.contact-mobile-bar{
-  display: inherit;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: var(--tp-dark-blue);
-}
-.contact-mobile-bar p{
-  animation: pulse 3s infinite;
-}
+  .contact-mobile-bar{
+    display: inherit;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--tp-dark-blue);
+  }
+  .contact-mobile-bar p{
+    animation: pulse 3s infinite;
+  }
 
-.nav-tel{
-  display: flex;
-  align-items: center;
-}
-
-  .video-overlay{
-    margin: 0;
-    border-radius: 0; 
-    box-shadow: none;
+  .nav-tel{
+    display: flex;
+    align-items: center;
   }
 
   .App-header h1{
-    font-size: 2em;
-    animation: none;
+    font-size: 3em;
+    animation: none;  
   }
 
-  .App-header p{
+  .App-header p{    
     animation: none;
     visibility: visible;
-    font-size: 1.5em;
-  }
-
-  .App-header video{
-    min-height:400px;
-    object-fit: initial;
+    font-size: 1.6em;
   }
 }
