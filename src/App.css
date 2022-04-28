@@ -27,7 +27,9 @@ body{
 
 /* Nav Styling */
 .App-logo {
-  width: 200px;
+  width: 8%;
+  max-width:250px;
+  min-width:175px;
 }
 nav{
   background-color: var(--tp-dark-blue);
@@ -36,11 +38,15 @@ nav{
   align-items: center;
   color: #f0f0f0;
   padding: 0.5em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .nav-slogan{
   font-size: 1.3em;
   font-style: italic;
+  text-align: center;
 }
 
 .nav-emphasis{
@@ -54,6 +60,7 @@ nav{
 
 .nav-tel p{
   margin:0.3em;
+  text-align: center;
 }
 .nav-tel p:nth-of-type(1){
   font-size:1.6em;
@@ -71,24 +78,7 @@ nav{
 
 .contact-mobile-bar{
   display: none;
-  z-index: 999;
-  width: 100%;
 }
-
-#secondary-nav {
-  display: none;
-  z-index: 999;
-  background-color: var(--tp-dark-blue);
-  width:100%;
-  animation: fade 2s;
-  animation-fill-mode: forwards;
-}
-
-#secondary-nav img{
-  width: 10%;
-}
-
-
 
 
 /* Header/Hero */
@@ -173,7 +163,7 @@ main{
 /* Media Queries */
 @media screen and (max-width: 600px ) {
   .App-logo{
-    width: 35%;
+    width: 25%;
     margin: 0.5em;
   }
 
@@ -193,7 +183,7 @@ main{
 }
 
 .contact-mobile-bar img{
-  width: 20px;
+  width: 30px;
   margin: 0.5em 1em;
 }
 
@@ -203,6 +193,8 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  color: var(--tp-dark-blue);
 }
 .contact-mobile-bar p{
   animation: pulse 3s infinite;
