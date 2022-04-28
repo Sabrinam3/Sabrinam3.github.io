@@ -38,7 +38,7 @@ function App() {
         </div>
           <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
         <main>
-
+          <h2></h2>
         </main>
 
   
