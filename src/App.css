@@ -11,8 +11,11 @@ body{
 
 :root {
   --tp-dark-blue: rgb(13, 6, 33);
+  --tp-medium-blue: rgb(14, 8, 66);
   --tp-accent-blue: #3fab9e;
   --tp-accent-hover: #65bcb1;
+  --tp-light-grey: #f3f3f3;
+  --tp-grey:#d2d2d2;
   --base-shadow: rgba(0, 0, 0, 0.12);
   --blue-shadow-from: #3fab9e;
   --blue-shadow-to: #1f554f;
@@ -48,6 +51,16 @@ body{
   font-size: 1em;
 }
 
+.subheading-bar{
+  color: var(--tp-medium-blue);
+  font-size: 2em;
+  /* border-left: 2px solid var(--tp-accent-blue); */
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  
+}
+
 /* Nav Styling */
 .App-logo {
   width: 8%;
@@ -64,12 +77,6 @@ nav{
   position: sticky;
   top: 0;
   z-index: 999;
-}
-
-.nav-slogan{
-  font-size: 1.3em;
-  font-style: italic;
-  text-align: center;
 }
 
 .nav-emphasis{
@@ -104,7 +111,6 @@ nav{
 }
 
 
-
 /* Header/Hero */
 .video-overlay {
   padding: 3em;
@@ -118,12 +124,9 @@ nav{
              -12px -12px 15px #05053d; */
 }
 .App-header {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/hero.jpeg');
-  background-size: cover;
-  background-position: left; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
   position: relative;
 }
 
@@ -174,9 +177,43 @@ nav{
 
 /* Main */
 main{
-  background-color: #ccc;
-  height:1000px;
+  width: 100%;
+  margin-top: -1em;
+  background-color: var(--tp-light-grey);
 }
+
+.inner-content{
+  padding: 8em;
+}
+
+.slogan{
+  font-size: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--tp-medium-blue);
+}
+
+.mission-section{
+  display: flex;
+  padding: 4em 0;
+ 
+}
+
+.mission-statement{
+  width: 58%;
+  margin-right: 2%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+
+}
+.mission-section img{
+  width: 40%
+}
+
 
 
 /* Animations */
@@ -202,17 +239,17 @@ main{
   }
   .video-overlay{
     margin: 2em; 
+    padding: 0;
   }
 }
 @media screen and (max-width: 700px ) {
   .App-logo{
-    width: 25%;
+    width: 20%;
+    max-width:150px;
+    min-width:100px;
     margin: 0.5em;
   }
 
-  .nav-slogan{
-    display: none;
-  }
   .nav-tel > p{
     display: none;
   }
@@ -260,5 +297,10 @@ main{
     animation: none;
     visibility: visible;
     font-size: 1.6em;
+  }
+  @media screen and (max-width: 500px ) {
+    .video-overlay{
+      margin: 0;
+    }
   }
 }
