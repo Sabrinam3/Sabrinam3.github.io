@@ -24,7 +24,6 @@ function App() {
           <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
         </div>
         <div className="contact-mobile-bar">
-          <img src={phone} alt="Call Now Icon"/>
           <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
       </div>
       </nav>
