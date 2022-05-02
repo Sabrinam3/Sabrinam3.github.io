@@ -14,24 +14,38 @@ body{
   --tp-medium-blue: rgb(14, 8, 66);
   --tp-accent-blue: #3fab9e;
   --tp-accent-hover: #65bcb1;
+  --tp-accent-dark: #18937C;
   --tp-light-grey: #f3f3f3;
   --tp-grey:#d2d2d2;
-  --base-shadow: rgba(0, 0, 0, 0.12);
+  --base-shadow: 0 4px 23px 0px rgba(0, 0, 0, 0.3);
   --blue-shadow-from: #3fab9e;
   --blue-shadow-to: #1f554f;
-  --blue-box-shadow:  0 14px 26px -12px var(--blue-shadow-from), 0 4px 23px 0px var(--base-shadow), 0 8px 10px -5px var(--blue-shadow-to);
+  --blue-box-shadow:  0 14px 26px -12px var(--blue-shadow-from), var(--base-shadow), 0 10px 10px -5px var(--blue-shadow-to);
 }
 
 /* Common Components */
-.button1{
+
+.button{
   border: none;
   background-color: var(--tp-accent-blue);
-  padding: 0.5em 1.8em;
+  padding: 0.3em 1.1em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
   color: #f0f0f0;
   font-size: 1em;
+  box-shadow: 0 10px 10px -5px var(--blue-shadow-to);
+}
+.button1{
+  border: none;
+  background-color: var(--tp-accent-blue);
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: bolder;
+  color: #f0f0f0;
+  font-size: 1em;
+  box-shadow: 0 10px 10px -5px var(--blue-shadow-to);
 }
 
 .button1:hover{
@@ -51,15 +65,29 @@ body{
   font-size: 1em;
 }
 
-.subheading-bar{
+.subheading{
   color: var(--tp-medium-blue);
-  font-size: 2em;
+  font-size: 3em;
   /* border-left: 2px solid var(--tp-accent-blue); */
   padding: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   text-align: center;
-  
 }
+.subheading-2{
+  font-family: 'Playfair Display', serif;
+  color: var(--tp-accent-dark);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.3em;
+}
+
 
 /* Nav Styling */
 .App-logo {
@@ -179,40 +207,100 @@ nav{
 main{
   width: 100%;
   margin-top: -1em;
-  background-color: var(--tp-light-grey);
+  background-color: white;
 }
 
-.inner-content{
-  padding: 8em;
-}
-
+/* ==================MISSION SECTION ================== */
 .slogan{
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-style: italic;
   text-align: center;
-  margin-bottom: 2em;
   color: var(--tp-medium-blue);
+  font-family: 'Playfair Display', serif;
 }
 
-.mission-section{
-  display: flex;
-  padding: 4em 0;
- 
+.mission-slogan img{
+  width: 75px;
 }
 
+section{
+  padding: 8em;
+  margin-bottom: 5em;
+}
 .mission-statement{
-  width: 58%;
-  margin-right: 2%;
-  color: black;
+  display: flex;
+}
+
+.mission-inner ~ img{
+  width:38.2%
+}
+.mission-slogan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+.mission-inner{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 0 6em;
+}
 
+.mission-inner button{
+  margin-top: 3em ;
 }
-.mission-section img{
-  width: 40%
+
+section p{
+  font-size: 1.2em;
+  margin: 0.5em 0;
 }
+
+
+
+/* ==================FEATURE SECTION ================== */
+.feature{
+  background-color: var(--tp-light-grey);
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+.feature-inner{
+  margin-top: 2em;
+  width: 61.8%;
+}
+.feature-container{
+  display: flex;
+  align-items: flex-start;
+  margin: 0.3em 0;
+}
+
+.feature-inner p{
+  margin-bottom: 2em;
+}
+
+.feature-container img{
+  width: 40px;
+  margin-right: 1.5em;
+}
+
+.feature h3{
+  text-align: center;
+  color: var(--tp-medium-blue);
+}
+
+.feature h4{
+  color: var(--tp-dark-blue);
+  margin: 1em 0;
+}
+
+.feature-container ~ p{
+  padding: 0 1.5em;
+  color: var(--tp-dark-blue);
+}
+
 
 
 
@@ -231,7 +319,25 @@ main{
   }
 }
 
-/* Media Queries */
+/* ==============Media Queries ==============*/
+@media screen and (max-width: 1300px){
+  .mission-inner{
+    padding: 0 2em;
+  }
+}
+@media screen and (max-width: 1100px ) {
+  .mission-statement{
+    flex-direction: column;
+    align-items: center;
+  }
+ .mission-inner ~ img {
+    width: 80%;
+    margin-top: 2em; 
+  }
+  .feature-inner{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 900px ) {
   .App-header video{
     min-height:500px;
@@ -241,11 +347,17 @@ main{
     margin: 2em; 
     padding: 0;
   }
+  section{
+    padding: 2em;
+  }
+  .feature-inner{
+    width: 95%;
+  }
 }
 @media screen and (max-width: 700px ) {
   .App-logo{
     width: 20%;
-    max-width:150px;
+    max-width:125px;
     min-width:100px;
     margin: 0.5em;
   }
@@ -278,6 +390,7 @@ main{
     align-items: center;
     width: 100%;
     color: var(--tp-dark-blue);
+    padding: 0.5em;
   }
   .contact-mobile-bar p{
     animation: pulse 3s infinite;
@@ -298,9 +411,26 @@ main{
     visibility: visible;
     font-size: 1.6em;
   }
-  @media screen and (max-width: 500px ) {
-    .video-overlay{
-      margin: 0;
-    }
+
+  .mission-inner{
+    padding: 0;
   }
+ .feature{
+   padding: 4em 0.5em;
+ }
+ .feature-container ~ p{
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 500px ) {
+  .video-overlay{
+    margin: 0;
+  }
+  .mission-inner ~ img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px ) {
+  
 }
