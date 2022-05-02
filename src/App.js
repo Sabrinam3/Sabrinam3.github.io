@@ -50,7 +50,7 @@ function App() {
             <div className="mission-statement">
                   <h3 className="slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></h3>
                   <p>At ThieLot Painting, we take pride in every project - that is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
-                  <p>We remain dedicated to delivering the best quality at the most competitive price by combining current technology with old fashioned values and service.</p>
+                  <p>We remain dedicated to delivering the <span className="nav-emphasis">best quality</span> at the most <span className="nav-emphasis">competitive price</span> by combining current technology with old fashioned values and service.</p>
                   <p>We are a family run business with over x years of industry experience and knowledge. Let us help make your home or business look its best! </p>
                   <button className="button1">Contact Us Today</button>
            
@@ -94,20 +94,19 @@ function App() {
               </div>
             </div>
           </section>
+        
+          <section className="services-section">
+          
+          <div className="services-container">
+          <h2 className="subheading"><span className="nav-emphasis">Residential</span> Painting </h2>
+          </div>
+          </section>
           <section className="estimate-section">
             <div className="estimate-overlay">
               <h2>Book Your Free Estimate Today!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio et, maximus orci. Curabitur nec tellus feugiat, semper ex vel, dictum leo.</p>
               <button className="icon-button">Get a Free Estimate<img src={arrowright} alt=""/></button>
             </div>
-          </section>
-          <section className="services-section">
-          <h2 className="subheading">Residential Painting </h2>
-          <div className="services-image-container">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
           </section>
 
       </main>

@@ -8,10 +8,7 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
-<<<<<<< HEAD
   font-size: 1.3em;
-=======
->>>>>>> feature
 }
 
 :root {
@@ -187,7 +184,7 @@ video{
   font-size: 1em;
 }
 .App-header h1{
-  font-size: 3.5em;
+  font-size: 3em;
   color: #fff;
   animation: fadeInUp 2s;
 }
@@ -244,6 +241,11 @@ main{
 
 .mission-statement p{
   padding: 1em 0;
+  font-size: 1.2em;
+}
+.mission-statement button{
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -294,14 +296,15 @@ main{
 
 /* ==================ESTIMATE SECTION ================== */
 .estimate-section{
-  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/free-estimate.jpeg');
+  background: linear-gradient(rgba(13, 6, 33, 0.2), rgba(13, 6, 33, 0.2)), url('./assets/images/free-estimate.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding: 1em;
 }
 
 .estimate-overlay{
-  width: 50%;
+  width: 61.8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,27 +333,21 @@ main{
 }
 
 /* ==================SERVICES SECTION ================== */
-.services-image-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  height: 500px;
+.services-section{
+  background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url('./assets/images/residential1.jpeg');
+  background-size: cover;
+  height: 700px;
+  background-position: center;
 }
-.services-image-container div{
-  width: 100%;
-  background-size: contain; 
-  
-}
-.services-image-container div:nth-child(1){
-  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential1.jpeg');
+
+.services-container{
+  background-color: var(--tp-dark-blue);
 
 }
-.services-image-container div:nth-child(2){
-  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential2.jpeg');
+.services-section h2{
+  color: var(--tp-light-grey);
 }
-.services-image-container div:nth-child(3){
-  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential3.jpeg');
-}
+
 /* Animations */
 @keyframes reveal {
   to{
@@ -464,7 +461,7 @@ main{
   
   .contact-mobile-bar p{
     animation: pulse 3s infinite;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
   }
 
@@ -474,7 +471,7 @@ main{
   }
 
   .App-header h1{
-    font-size: 3em;
+    font-size: 2.5em;
     animation: none;  
   }
 
@@ -517,16 +514,13 @@ main{
 }
 
 @media screen and (max-width: 500px ) {
-<<<<<<< HEAD
   .video-overlay{
     margin: 0;
   }
  
-=======
   .mission-inner ~ img{
     width: 100%;
   }
->>>>>>> feature
   .feature-container img{
     margin-right: 0.5em;
   }
