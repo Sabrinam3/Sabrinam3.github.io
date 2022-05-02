@@ -22,7 +22,7 @@ function App() {
         {/* <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p> */}
         <div className="nav-tel">
           <div className="contact-mobile-span">
-            <button className="button">Contact Us</button>
+            <button className="button">Contact Us Now</button>
           </div>
           <p>(519) 859-9458</p>
           <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
@@ -48,20 +48,14 @@ function App() {
           <section>
               <h2 className="subheading">Our Mission</h2>
             <div className="mission-statement">
-                <div className='mission-inner'>
-                  <div className="mission-slogan">
-                     <img src={logosmall} alt=""/>
-                     <h3 className="slogan">Doing the Project <span className="nav-emphasis">Properly</span> the <span className="nav-emphasis">First Time</span></h3>
-                  </div>
-                    <p>At ThieLot Painting, we take pride in every project - that is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
-                    <p>We remain dedicated to delivering the best quality at the most competitive price by combining current technology with old fashioned values and service.</p>
-                    <p>We are a family run business with over x years of industry experience and knowledge. Let us help make your home or business look its best! </p>
-                    <button className="button1">Contact Us Today</button>
-                </div>
-                <img src={ladder} alt="a bedroom is being painted white"/>
-                 {/* <p>We offer residential and commerical painting services at a competitive price. </p>
-                 <p>We remain dedicated to delivering the best quality at the most competitive price.</p>
-                 <p>We are a family run business with over X years of experience. Combining </p> */}  
+                  <h3 className="slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></h3>
+                  <p>At ThieLot Painting, we take pride in every project - that is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
+                  <p>We remain dedicated to delivering the best quality at the most competitive price by combining current technology with old fashioned values and service.</p>
+                  <p>We are a family run business with over x years of industry experience and knowledge. Let us help make your home or business look its best! </p>
+                  <button className="button1">Contact Us Today</button>
+           
+                {/* <img src={ladder} alt="a bedroom is being painted white"/> */}
+ 
             </div>
           
           </section>
@@ -102,12 +96,19 @@ function App() {
           </section>
           <section className="estimate-section">
             <div className="estimate-overlay">
-              <h2>Book Your Free Estimate Today</h2>
+              <h2>Book Your Free Estimate Today!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio et, maximus orci. Curabitur nec tellus feugiat, semper ex vel, dictum leo.</p>
               <button className="icon-button">Get a Free Estimate<img src={arrowright} alt=""/></button>
             </div>
           </section>
-
+          <section className="services-section">
+          <h2 className="subheading">Residential Painting </h2>
+          <div className="services-image-container">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          </section>
 
       </main>
     </div>

@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
-
+  font-size: 1.3em;
 }
 
 :root {
@@ -24,7 +24,13 @@ body{
 }
 
 /* Common Components */
+section{
+  padding: 8em;
+}
 
+button{
+  font-size: 0.8em;
+}
 .button{
   border: none;
   background-color: var(--tp-accent-blue);
@@ -44,7 +50,6 @@ body{
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
   color: #f0f0f0;
-  font-size: 1em;
   box-shadow: 0 10px 10px -5px var(--blue-shadow-to);
 }
 
@@ -62,7 +67,6 @@ body{
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
   color: #f0f0f0;
-  font-size: 1em;
 }
 
 .icon-button{
@@ -73,18 +77,15 @@ body{
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
   color: #f0f0f0;
-  font-size: 1em;
   box-shadow: 0 15px 15px -5px var(--tp-dark-blue);
   width: 200px;
 }
 
 .subheading{
   color: var(--tp-medium-blue);
-  font-size: 3em;
+  font-size: 2.5em;
   /* border-left: 2px solid var(--tp-accent-blue); */
-  padding: 0.5em;
-  margin-bottom: 1em;
-  text-align: center;
+  /* padding: 0.5em; */
 }
 .subheading-2{
   font-family: 'Playfair Display', serif;
@@ -94,12 +95,9 @@ body{
 }
 
 h3{
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
-h4{
-  font-size: 1.3em;
-}
 
 
 /* Nav Styling */
@@ -153,11 +151,17 @@ nav{
 
 
 /* Header/Hero */
+video{
+  filter: brightness(50%);
+  width: 100%;
+  max-height: 950px;
+  min-height: 800px;
+  object-fit: initial;
+}
 .video-overlay {
-  padding: 3em;
   position: absolute;
   border-radius: 25px;
-  margin: 8em;
+  margin: 2em;
   z-index: 2;
   /* background-color: rgba(241, 241, 241, 0.8); */
   /* box-shadow: rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset, rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset; */
@@ -171,10 +175,7 @@ nav{
   position: relative;
 }
 
-.App-header video{
-  filter: brightness(50%);
-  width: 100%;
-}
+
 
 .App-header span{
   color: var(--tp-accent-blue);
@@ -225,49 +226,21 @@ main{
 
 /* ==================MISSION SECTION ================== */
 .slogan{
-  font-size: 1.6em;
+  font-size: 1.1em;
   font-style: italic;
-  text-align: center;
   color: var(--tp-medium-blue);
   font-family: 'Playfair Display', serif;
+  margin-bottom: 1em;
 }
 
-.mission-slogan img{
-  width: 75px;
-}
-
-section{
-  padding: 8em;
-}
 .mission-statement{
-  display: flex;
+  width: 61.8%;
 }
 
-.mission-inner ~ img{
-  width:38.2%
-}
-.mission-slogan{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5em;
+.mission-statement p{
+  padding: 1em 0;
 }
 
-.mission-inner{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 6em;
-}
-
-.mission-inner button{
-  margin-top: 3em ;
-}
-
-section p{
-  font-size: 1.2em;
-  margin: 0.5em 0;
-}
 
 
 
@@ -319,7 +292,6 @@ section p{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  margin-bottom: 8em;
 }
 
 .estimate-overlay{
@@ -351,7 +323,28 @@ section p{
   justify-content: space-evenly;
 }
 
+/* ==================SERVICES SECTION ================== */
+.services-image-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: 500px;
+}
+.services-image-container div{
+  width: 100%;
+  background-size: contain; 
+  
+}
+.services-image-container div:nth-child(1){
+  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential1.jpeg');
 
+}
+.services-image-container div:nth-child(2){
+  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential2.jpeg');
+}
+.services-image-container div:nth-child(3){
+  background: linear-gradient(rgba(13, 6, 33, 0.8), rgba(13, 6, 33, 0.8)), url('./assets/images/residential3.jpeg');
+}
 /* Animations */
 @keyframes reveal {
   to{
@@ -368,7 +361,15 @@ section p{
 }
 
 /* ==============Media Queries ==============*/
+@media screen and (max-width: 1500px){
+  section{
+    padding: 4em;
+  }
+}
 @media screen and (max-width: 1300px){
+  section{
+    padding: 2em;
+  }
   .mission-inner{
     padding: 0 2em;
   }
@@ -376,14 +377,10 @@ section p{
     width: 80%;
   }
 }
-@media screen and (max-width: 1100px ) {
+@media screen and (max-width: 1200px ) {
+
   .mission-statement{
-    flex-direction: column;
-    align-items: center;
-  }
- .mission-inner ~ img {
     width: 80%;
-    margin-top: 2em; 
   }
   .feature-inner{
     width: 80%;
@@ -391,19 +388,17 @@ section p{
 
 }
 @media screen and (max-width: 1100px ) {
+  .App-header video{
+    min-height:500px;
+  }
   .estimate-overlay{
+    width: 100%;
+  }
+  .mission-statement{
     width: 100%;
   }
 }
 @media screen and (max-width: 900px ) {
-  .App-header video{
-    min-height:500px;
-    object-fit: initial;
-  }
-  .video-overlay{
-    margin: 2em; 
-    padding: 0;
-  }
   section{
     padding: 2em;
   }
@@ -469,9 +464,6 @@ section p{
     font-size: 1.6em;
   }
 
-  .mission-inner{
-    padding: 0;
-  }
  .feature{
    padding: 4em 0.5em;
  }
@@ -484,9 +476,7 @@ section p{
   .video-overlay{
     margin: 0;
   }
-  .mission-inner ~ img{
-    width: 100%;
-  }
+ 
   .feature-container img{
     margin-right: 0.5em;
   }
