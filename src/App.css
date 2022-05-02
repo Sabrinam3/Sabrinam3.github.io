@@ -191,7 +191,7 @@ video{
 .App-header p{
   font-family: 'Playfair Display', serif;
   color: #f0f0f0;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-top: 0.5em;
   font-weight: 500;
   animation-name: fadeInUp, reveal;
@@ -392,7 +392,7 @@ main{
 }
 @media screen and (max-width: 1100px ) {
   .App-header video{
-    min-height:500px;
+    min-height:550px;
   }
   .estimate-overlay{
     width: 100%;
@@ -418,6 +418,9 @@ main{
   }
 }
 @media screen and (max-width: 700px ) {
+  main{
+    background-color: var(--tp-light-grey);
+  }
   .App-logo{
     width: 20%;
     max-width:125px;
@@ -456,7 +459,6 @@ main{
     top: 0;
     z-index: 4;
     height: 40px;
-    padding-top:0.5em;
   }
   
   .contact-mobile-bar p{
@@ -509,14 +511,10 @@ main{
 .feature p{
   color: var(--tp-grey);
   text-align: center;
-  font-size: 1.4em;
 }
 }
 
 @media screen and (max-width: 500px ) {
-  .video-overlay{
-    margin: 0;
-  }
  
   .mission-inner ~ img{
     width: 100%;
