@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Source+Sans+Pro&display=swap');
 @import "../node_modules/animate.css/animate.css";
 *{
-  margin: 0;
+  margin: 0;  
+  overflow: visible;
 }
+
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
+<<<<<<< HEAD
   font-size: 1.3em;
+=======
+>>>>>>> feature
 }
 
 :root {
@@ -113,9 +118,9 @@ nav{
   align-items: center;
   color: #f0f0f0;
   padding: 0.5em;
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 999; */
 }
 
 .nav-emphasis{
@@ -141,9 +146,9 @@ nav{
   font-family: 'Playfair Display', serif;
 }
 
-.contact-mobile-span{
+/* .contact-mobile-span{
   display: none;
-}
+} */
 
 .contact-mobile-bar{
   display: none;
@@ -269,6 +274,7 @@ main{
 .feature-container img{
   width: 40px;
   margin-right: 1.5em;
+  filter: invert(46%) sepia(61%) saturate(544%) hue-rotate(119deg) brightness(89%) contrast(89%);
 }
 
 .feature h3{
@@ -399,6 +405,14 @@ main{
   }
 }
 @media screen and (max-width: 900px ) {
+  .App-header video{
+    min-height:500px;
+    object-fit: initial;
+  }
+  .video-overlay{
+    margin: 2em 0em 0em 2em;
+    padding: 0;
+  }
   section{
     padding: 2em;
   }
@@ -422,17 +436,17 @@ main{
     justify-content: space-between;
     padding: 0;
   }
-  .contact-mobile-span{
+  /* .contact-mobile-span{
     display: inherit;
-  }
+  } */
   .contact-desktop-span{
     display: none;
   }
 
-  .contact-mobile-bar img{
+  /* .contact-mobile-bar img{
     width: 30px;
     margin: 0.5em 1em;
-  }
+  } */
 
   .contact-mobile-bar{
     display: inherit;
@@ -440,12 +454,18 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     color: var(--tp-dark-blue);
-    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    height: 40px;
+    padding-top:0.5em;
   }
+  
   .contact-mobile-bar p{
     animation: pulse 3s infinite;
+    font-size: 1.2em;
+
   }
 
   .nav-tel{
@@ -466,17 +486,47 @@ main{
 
  .feature{
    padding: 4em 0.5em;
+   background-color: var(--tp-dark-blue);
+ }
+ .feature-container{
+  flex-direction: column;
+  align-items: center;
  }
  .feature-container ~ p{
   padding: 0;
 }
+.feature-container img{
+  width:50px;
+  filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(176deg) brightness(116%) contrast(88%);
+  margin-bottom: 1em;
+}
+.subheading-2{
+  color: var(--tp-light-grey);
+}
+.feature h4{
+  color: var(--tp-accent-dark);
+}
+.feature h3{
+  color: var(--tp-accent-hover);
+}
+.feature p{
+  color: var(--tp-grey);
+  text-align: center;
+  font-size: 1.4em;
+}
 }
 
 @media screen and (max-width: 500px ) {
+<<<<<<< HEAD
   .video-overlay{
     margin: 0;
   }
  
+=======
+  .mission-inner ~ img{
+    width: 100%;
+  }
+>>>>>>> feature
   .feature-container img{
     margin-right: 0.5em;
   }

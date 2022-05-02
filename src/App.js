@@ -14,25 +14,31 @@ import arrowright from './assets/images/arrow-right.svg';
 import './App.css';
 
 function App() {
-  return (
-    
+  return (  
     <div className="App">
       <nav>
         <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
         {/* <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p> */}
         <div className="nav-tel">
+<<<<<<< HEAD
           <div className="contact-mobile-span">
             <button className="button">Contact Us Now</button>
           </div>
+=======
+          {/* <div className="contact-mobile-span">
+            <button className="button">Contact Us</button>
+          </div> */}
+>>>>>>> feature
           <p>(519) 859-9458</p>
           <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
         </div>
-        <div className="contact-mobile-bar">
-          <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
-      </div>
       </nav>
+      <div className="contact-mobile-bar">
+        <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
+      </div>
 
       <header className="App-header">
+
         <div className="video-overlay">
           <div>
             <h1>ThieLot Painting<span>.</span></h1>
