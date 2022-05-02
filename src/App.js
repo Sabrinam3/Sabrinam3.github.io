@@ -20,15 +20,9 @@ function App() {
         <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
         {/* <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p> */}
         <div className="nav-tel">
-<<<<<<< HEAD
-          <div className="contact-mobile-span">
-            <button className="button">Contact Us Now</button>
-          </div>
-=======
           {/* <div className="contact-mobile-span">
             <button className="button">Contact Us</button>
           </div> */}
->>>>>>> feature
           <p>(519) 859-9458</p>
           <p>Call Now for a <span className="nav-emphasis">Free</span> Estimate</p>
         </div>
