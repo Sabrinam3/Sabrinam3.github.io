@@ -6,6 +6,7 @@ import dollar from './assets/images/dollar.svg';
 import handshake from './assets/images/handshake.svg';
 import paintbrush from './assets/images/paintbrush.svg';
 import invoice from './assets/images/invoice.svg';
+import arrowright from './assets/images/arrow-right.svg';
 
 
 
@@ -97,16 +98,15 @@ function App() {
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio et, maximus orci. Curabitur nec tellus feugiat, semper ex vel, dictum leo.</p>
               </div>
-        
-           
-              
-     
-         
-
-              
             </div>
           </section>
-
+          <section className="estimate-section">
+            <div className="estimate-overlay">
+              <h2>Book Your Free Estimate Today</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio et, maximus orci. Curabitur nec tellus feugiat, semper ex vel, dictum leo.</p>
+              <button className="icon-button">Get a Free Estimate<img src={arrowright} alt=""/></button>
+            </div>
+          </section>
 
 
       </main>
