@@ -680,8 +680,11 @@ main .services-section:last-child{
     padding: 0;
     border-left: none;
   }
+  .App-header h1{
+    font-size: 1.8em;
+  }
   .App-header p{
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .video-overlay{
     padding: 1em;
@@ -693,6 +696,7 @@ main .services-section:last-child{
     align-items: center;
     justify-content: center;
   }
+
 }
 @media screen and (max-width:400px ) {
   
