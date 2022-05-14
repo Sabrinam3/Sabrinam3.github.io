@@ -676,6 +676,23 @@ main .services-section:last-child{
   .feature-container img{
     margin-right: 0.5em;
   }
+  .video-overlay div:first-child{
+    padding: 0;
+    border-left: none;
+  }
+  .App-header p{
+    font-size: 1.2em;
+  }
+  .video-overlay{
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+  }
+  .App-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width:400px ) {
   
