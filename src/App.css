@@ -100,7 +100,9 @@ h3{
   font-size: 1.5em;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 /* Nav Styling */
 .App-logo {
@@ -262,6 +264,7 @@ main{
 /* ==================FEATURE SECTION ================== */
 .feature{
   background-color: var(--tp-light-grey);
+ 
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -300,44 +303,6 @@ main{
 .feature-container ~ p{
   padding: 0 1.5em;
   color: var(--tp-dark-blue);
-}
-
-/* ==================ESTIMATE SECTION ================== */
-.estimate-section{
-  background: linear-gradient(rgba(13, 6, 33, 0.2), rgba(13, 6, 33, 0.2)), url('./assets/images/free-estimate.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  padding: 1em;
-}
-
-.estimate-overlay{
-  width: 61.8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.estimate-overlay h2{
-  font-size: 2.5em;
-  color: var(--tp-accent-blue);
-  animation: fadeInUp 2s;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-.estimate-overlay p{
-  color: var(--tp-light-grey);
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.estimate-overlay button{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 /* ==================SERVICES SECTION ================== */
@@ -491,6 +456,89 @@ main .services-section:last-child{
 .services-list-wide p {
   font-weight: bolder;
 }
+
+/* ==================CONTACT SECTION ================== */
+.contact-section{
+  /* background-color: var(--tp-dark-blue); */
+  background: linear-gradient(rgba(0,0,0, 0.95), rgba(13, 6, 33, 0.95)), url('./assets/images/interiorxx.jpeg');
+  margin-top: 10em;
+  background-size: cover;
+}
+.contact-section h3, .contact-section p{
+  color: var(--tp-light-grey);
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.contact-section p{
+ font-style: italic;
+ color: var(--tp-accent-dark);
+}
+
+#form-stage2{
+ display: none;
+}
+
+#form-stage1, #form-stage2{
+  animation: fade 1.5s;
+}
+#email-box, #phone-box{
+  animation: fade 1s;
+}
+
+.form-section{
+  width:25%;
+  margin: 2em auto;
+  background-color: var(--tp-medium-blue);
+  padding: 2em;
+}
+
+.form-box{
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+.MuiFormLabel-root{
+  margin: 0.2em 0;
+}
+.MuiFormControl-root{
+  width: 100%;
+}
+.MuiFormLabel-root, .MuiFormControlLabel-root, .MuiFormControlLabel-label{
+  color: white !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+.MuiFormLabel-root{
+  margin: 0.8em 0;
+}
+.MuiFormLabel-root.MuiInputLabel-root{
+  margin: 0;
+}
+.MuiToggleButton-root{
+  color: white !important;
+  width: 125px;
+}
+.MuiRadio-root{
+  color: var(--tp-accent-hover) !important;
+}
+.Mui-checked{
+  color: var(--tp-accent-dark)  !important;
+}
+.Mui-selected{
+  background-color: var(--tp-accent-dark) !important;
+}
+#email-box{
+  display: none;
+}
+.form-btn-box{
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
+.form-btn-box button{
+  margin: 0 1em;
+}
+
 
 
 

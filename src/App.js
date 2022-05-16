@@ -1,3 +1,4 @@
+import React from "react";
 import logo from './assets/images/logo.png';
 import logosmall from './assets/images/logo-small.png';
 import heroVideo from './assets/video/hero.mp4';
@@ -21,11 +22,12 @@ import commercial3 from "./assets/images/commercial3.jpeg";
 
 
 
-
-
 import './App.css';
 
+import Contact from "./components/Contact.js";
+
 function App() {
+
   return (  
     <div className="App">
       <nav>
@@ -50,7 +52,10 @@ function App() {
             <h1>ThieLot Painting<span>.</span></h1>
             <p>Premiere Residential and Commercial Painting Services</p>
             <div className="contact-desktop-span">
-              <button className="button1">Get a Free Estimate</button>
+              <a href="#contact">
+                <button className="button1">Get a Free Estimate</button>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -65,7 +70,10 @@ function App() {
                   <p>At ThieLot Painting, we take pride in every project - that is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
                   <p>We remain dedicated to delivering the <span className="nav-emphasis">best quality</span> at the most <span className="nav-emphasis">competitive price</span> by combining current technology with old fashioned values and service.</p>
                   <p>We are a family run business with over x years of industry experience and knowledge. Let us help make your home or business look its best! </p>
-                  <button className="button1">Contact Us Today</button>
+                  <a href="#contact">
+                    <button className="button1">Contact Us Today</button>
+                  </a>
+                 
                   </div>
 
                   <img src={ladder} alt="a bedroom is being painted white"/>
@@ -312,6 +320,15 @@ function App() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. </p>
               <button className="button1">Free Commercial Painting Quote</button>
             </div>
+           </section>
+           {/* Contact Section */}
+           <section className="contact-section" id="contact">
+   
+              <h3>Submit a Service Inquiry</h3> 
+              <p>Let us Know How We Can Help</p>
+              <Contact/>
+    
+             
            </section>
       </main>
     </div>
