@@ -562,9 +562,17 @@ main .services-section:last-child{
 }
 
 /* ==============Media Queries ==============*/
+@media screen and (max-width: 1700px){
+  .form-section{
+    width: 40%;
+  }
+}
 @media screen and (max-width: 1500px){
   section{
     padding: 4em;
+  }
+  .form-section{
+    width: 50%;
   }
 }
 @media screen and (max-width: 1300px){
@@ -601,7 +609,9 @@ main .services-section:last-child{
   .estimate-overlay{
     width: 100%;
   }
-
+  .form-section{
+    width: 60%;
+  }
 }
 @media screen and (max-width: 900px ) {
   .App-logo{
@@ -726,6 +736,9 @@ main .services-section:last-child{
     padding: 2em;
   }
 
+  .form-section{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 500px ) {
@@ -756,7 +769,17 @@ main .services-section:last-child{
     align-items: center;
     justify-content: center;
   }
-
+  .form-section{
+    width: 90%;
+    padding: 1em;
+  }
+  .contact-section{
+    background: var(--tp-dark-blue);
+    padding: 1em 0;
+  }
+  .form-section{
+    background-color: var(--tp-dark-blue);
+  }
 }
 @media screen and (max-width:400px ) {
   
