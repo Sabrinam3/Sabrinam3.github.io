@@ -2,19 +2,18 @@ import React from "react";
 import logo from './assets/images/logo.png';
 import logosmall from './assets/images/logo-small.png';
 import heroVideo from './assets/video/hero.mp4';
-import ladder from './assets/images/ladder.jpeg';
+import mission from './assets/images/mission.jpeg';
 import dollar from './assets/images/dollar.svg';
 import handshake from './assets/images/handshake.svg';
 import paintbrush from './assets/images/paintbrush.svg';
 import invoice from './assets/images/invoice.svg';
 import arrowright from './assets/images/arrow-right.svg';
 import interior from "./assets/images/interior.jpeg";
-import interior1 from "./assets/images/interior1.jpeg";
-import interior2 from "./assets/images/interior2.jpeg";
+
 
 import exterior from "./assets/images/exterior.jpeg";
 import exterior1 from "./assets/images/exterior1.jpeg";
-import exterior2 from "./assets/images/exterior2.jpeg";
+
 
 import commercial1 from "./assets/images/commercial1.jpeg";
 import commercial2 from "./assets/images/commercial2.jpeg";
@@ -62,21 +61,21 @@ function App() {
           <video src={heroVideo} type="video/mp4" autoPlay muted loop playsInline ></video>
       </header>
       <main>
-          <section>
+          <section id="mission-section">
               <h2 className="subheading">Our Mission</h2>
               <div className="mission-statement">
                   <div>
                   <h3 className="slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></h3>
-                  <p>At ThieLot Painting, we take pride in every project - that is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
+                
+                  <p>At ThieLot Painting, we take pride in <span className="nav-emphasis">every project</span>. That is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
                   <p>We remain dedicated to delivering the <span className="nav-emphasis">best quality</span> at the most <span className="nav-emphasis">competitive price</span> by combining current technology with old fashioned values and service.</p>
-                  <p>We are a family run business with over x years of industry experience and knowledge. Let us help make your home or business look its best! </p>
+                  <p>We are a family run business with over <span className="nav-emphasis">x years </span>of industry experience and knowledge. Let us help make your home or business look its best! </p>
                   <a href="#contact">
                     <button className="button1">Contact Us Today</button>
                   </a>
                  
                   </div>
-
-                  <img src={ladder} alt="a bedroom is being painted white"/>
+                  <img src={mission} alt=""/>
             </div>
           
           </section>

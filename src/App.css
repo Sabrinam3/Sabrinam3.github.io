@@ -9,6 +9,7 @@
 body{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.3em;
+  line-height: 1.7;
 }
 
 :root {
@@ -233,6 +234,9 @@ main{
 }
 
 /* ==================MISSION SECTION ================== */
+#mission-section{
+  background-color: var(--tp-light-grey);
+}
 .slogan{
   font-size: 1.1em;
   font-style: italic;
@@ -242,29 +246,25 @@ main{
 }
 .mission-statement{
   display: flex;
+  justify-content: space-between;
 }
 .mission-statement img{
-  width: 45%;
-  margin-left:5%;
+  width: 40%;
+  margin-left: 5%;
+
 }
 
-
-.mission-statement p{
-  padding: 1em 0;
-  font-size: 1.2em;
-}
 .mission-statement button{
   display: block;
-  margin: 0 auto;
+  margin: 3em auto;
 }
-
 
 
 
 /* ==================FEATURE SECTION ================== */
 .feature{
-  background-color: var(--tp-light-grey);
- 
+  /* background-color: var(--tp-light-grey); */
+  background: linear-gradient(rgba(0,0,0, 0.95), rgba(13, 6, 33, 0.95)), url('./assets/images/residential3.jpeg');
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -292,22 +292,25 @@ main{
 
 .feature h3{
   text-align: center;
-  color: var(--tp-medium-blue);
+  /* color: var(--tp-medium-blue); */
+  color: var(--tp-accent-blue);
 }
 
 .feature h4{
-  color: var(--tp-dark-blue);
+  /* color: var(--tp-dark-blue); */
+  color: var(--tp-light-grey);
   margin: 1em 0;
 }
 
 .feature-container ~ p{
   padding: 0 1.5em;
-  color: var(--tp-dark-blue);
+  /* color: var(--tp-dark-blue); */
+  color: var(--tp-grey);
 }
 
 /* ==================SERVICES SECTION ================== */
 .services-section{
-  padding:0;
+  padding:0.5em;
   margin-bottom: 5em;
 }
 
@@ -583,8 +586,11 @@ main .services-section:last-child{
     flex-direction: column;
   }
   .mission-statement img{
-    width: 90%;
+    width: 50%;
     margin: 5%;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 2/1;
   }
 
 }
@@ -615,6 +621,9 @@ main .services-section:last-child{
   section{
     padding: 2em;
   }
+  .services-section h2{
+    font-size: 2em;
+  }
   .feature-inner{
     width: 95%;
   }
@@ -623,6 +632,9 @@ main .services-section:last-child{
   }
 }
 @media screen and (max-width: 800px ) {
+  .mission-statement img{
+    width: 90%;
+  }
   .services-list-container{
     grid-template-columns: 1fr 1fr;
   }
