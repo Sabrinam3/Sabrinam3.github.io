@@ -47,8 +47,8 @@ button{
 }
 .button1{
   border: none;
-  background-color: var(--tp-accent-blue);
-  padding: 0.5em 2em;
+  background-color: var(--tp-accent-dark);
+  padding: 0.8em 2em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -64,12 +64,12 @@ button{
 .button2{
   border: none;
   background-color: transparent;
-  border: 2px solid var(--tp-accent-blue);
-  padding: 0.5em 1.8em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
-  color: #f0f0f0;
+  color: var(--tp-accent-dark);
+  font-size: 1.1em;
 }
 
 .icon-button{
@@ -83,6 +83,7 @@ button{
   box-shadow: 0 15px 15px -5px var(--tp-dark-blue);
   width: 200px;
 }
+
 
 .subheading{
   color: var(--tp-medium-blue);
@@ -236,6 +237,9 @@ main{
 /* ==================MISSION SECTION ================== */
 #mission-section{
   background-color: var(--tp-light-grey);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .slogan{
   font-size: 1.1em;
@@ -246,12 +250,15 @@ main{
 }
 .mission-statement{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.mission-statement > div{
+  width: 80%;
+  padding: 2em;
+  text-align: center;
 }
 .mission-statement img{
-  width: 40%;
-  margin-left: 5%;
-
+  width: 30%;
 }
 
 .mission-statement button{
@@ -264,7 +271,7 @@ main{
 /* ==================FEATURE SECTION ================== */
 .feature{
   /* background-color: var(--tp-light-grey); */
-  background: linear-gradient(rgba(0,0,0, 0.95), rgba(13, 6, 33, 0.95)), url('./assets/images/residential3.jpeg');
+  background: linear-gradient(rgba(14,8,66, 0.95), rgba(13,6,33, 0.95)), url('./assets/images/residential3.jpeg');
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -292,12 +299,11 @@ main{
 
 .feature h3{
   text-align: center;
-  /* color: var(--tp-medium-blue); */
   color: var(--tp-accent-blue);
+  font-family: 'Playfair Display', serif;
 }
 
 .feature h4{
-  /* color: var(--tp-dark-blue); */
   color: var(--tp-light-grey);
   margin: 1em 0;
 }
@@ -321,7 +327,6 @@ main .services-section:last-child{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 5em 0;
 }
 .services-top-bar div:first-child{
   display: flex;
@@ -354,6 +359,17 @@ main .services-section:last-child{
 
 .services-overlay{
   display: flex;
+  padding: 2em 0;
+}
+.services-overlay + h4{
+  text-align: center;
+  font-size: 1.2em;
+}
+.services-list-wide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
 }
 .services-overlay img{
   width: 100%;
@@ -448,16 +464,6 @@ main .services-section:last-child{
   filter: invert(44%) sepia(58%) saturate(589%) hue-rotate(119deg) brightness(92%) contrast(86%);
   width: 20px;
   margin-right: 10px;
-}
-.services-list-wide{
-  margin: 1.5em 0.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.services-list-wide p {
-  font-weight: bolder;
 }
 
 /* ==================CONTACT SECTION ================== */
@@ -590,17 +596,6 @@ main .services-section:last-child{
   .feature-inner{
     width: 80%;
   }
-  .mission-statement{
-    flex-direction: column;
-  }
-  .mission-statement img{
-    width: 50%;
-    margin: 5%;
-    display: block;
-    margin: 0 auto;
-    aspect-ratio: 2/1;
-  }
-
 }
 @media screen and (max-width: 1100px ) {
   .App-header video{
@@ -629,7 +624,7 @@ main .services-section:last-child{
     padding: 0;
   }
   section{
-    padding: 2em;
+    padding: 1em;
   }
   .services-section h2{
     font-size: 2em;
@@ -640,11 +635,12 @@ main .services-section:last-child{
   .nav-tel{
     font-size: 0.8em;
   }
+  .mission-statement{
+    flex-direction: column;
+  }
+ 
 }
 @media screen and (max-width: 800px ) {
-  .mission-statement img{
-    width: 90%;
-  }
   .services-list-container{
     grid-template-columns: 1fr 1fr;
   }
@@ -732,8 +728,11 @@ main .services-section:last-child{
   .services-overlay{
     flex-direction: column;
   }
+  .services-section h3{
+    text-align: center;
+  }
   .services-sub-text{
-    padding: 2em;
+    padding: 1em;
   }
 
   .form-section{

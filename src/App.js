@@ -63,20 +63,19 @@ function App() {
       <main>
           <section id="mission-section">
               <h2 className="subheading">Our Mission</h2>
+              <h3 className="slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></h3>
               <div className="mission-statement">
                   <div>
-                  <h3 className="slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></h3>
-                
-                  <p>At ThieLot Painting, we take pride in <span className="nav-emphasis">every project</span>. That is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
-                  <p>We remain dedicated to delivering the <span className="nav-emphasis">best quality</span> at the most <span className="nav-emphasis">competitive price</span> by combining current technology with old fashioned values and service.</p>
-                  <p>We are a family run business with over <span className="nav-emphasis">x years </span>of industry experience and knowledge. Let us help make your home or business look its best! </p>
-                  <a href="#contact">
-                    <button className="button1">Contact Us Today</button>
-                  </a>
-                 
+                    <p>At ThieLot Painting, we take pride in <span className="nav-emphasis">every project</span>. That is why we bring top quality workmanship and meticulous attention to detail to every job - large or small.</p>
+                    <p>We remain dedicated to delivering the <span className="nav-emphasis">best quality</span> at the most <span className="nav-emphasis">competitive price</span> by combining current technology with old fashioned values and service.</p>
+                    <p>We are a family run business with over <span className="nav-emphasis">x years </span>of industry experience and knowledge. Let us help make your home or business look its best! </p>
+                    <a href="#contact">
+                      <button className="button1">Contact Us Today</button>
+                    </a>
                   </div>
-                  <img src={mission} alt=""/>
-            </div>
+
+                  {/* <img src={mission} alt=""/> */}
+              </div>
           
           </section>
 
@@ -121,27 +120,7 @@ function App() {
                 <img src={logosmall} alt=""/>
                 <h2 className="subheading"><span className="nav-emphasis-dark">Residential</span> Painting Services</h2>
               </div>
-       
             </div>
-            <h4>The <span className="nav-emphasis-dark">ThieLot Painting </span>Difference</h4>
-              <div className="services-list-wide">
-                <div className="services-list-item">
-                  <img src={paintbrush} alt=""/>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
-                </div>
-                <div className="services-list-item">
-                  <img src={paintbrush} alt=""/>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
-                </div>
-                <div className="services-list-item">
-                  <img src={paintbrush} alt=""/>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
-                </div>
-                <div className="services-list-item">
-                  <img src={paintbrush} alt=""/>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
-                </div>   
-              </div>
             <div className="services-overlay">
               <div className="services-img">
                   <div className="services-img-overlay">
@@ -165,12 +144,18 @@ function App() {
                 <img src={exterior} alt=""/>
               </div>
             </div>
-             
+            <h4>The <span className="nav-emphasis-dark">ThieLot Painting </span>Difference</h4>
+              <div className="services-list-wide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>  
+              </div>
             {/* Interior Painting */}
              
             <div className="services-sub-text">
               <h3><span className="nav-emphasis-dark">Interior</span> Painting</h3>   
-              <h4>Our Services Include:</h4>
+              <h4>Our <span className="nav-emphasis-dark">Services</span> Include:</h4>
               <div className="services-list-container">
                 <div className="services-list-item">
                   <img src={paintbrush} alt=""/>
@@ -201,7 +186,6 @@ function App() {
                   <p>Interior Wall Painting</p>
                 </div>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam. </p>
               <button className="button1">Free Interior Painting Quote</button>
             </div>
 
@@ -282,6 +266,13 @@ function App() {
                 <img src={commercial3} alt=""/>
               </div>
             </div>
+            <h4>The <span className="nav-emphasis-dark">ThieLot Painting </span>Difference</h4>
+              <div className="services-list-wide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.</p>  
+              </div>
             {/* Commercial Painting Services */}
             <div className="services-sub-text">
               <h3><span className="nav-emphasis-dark">Commercial</span> Painting</h3>   
