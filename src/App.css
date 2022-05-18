@@ -27,9 +27,6 @@ body{
 }
 
 /* Common Components */
-section{
-  padding: 8em;
-}
 
 button{
   font-size: 0.8em;
@@ -63,13 +60,14 @@ button{
 
 .button2{
   border: none;
-  background-color: transparent;
+  background-color: var(--tp-dark-blue);
   padding: 0.5em 1em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
-  color: var(--tp-accent-dark);
+  color: white;
   font-size: 1.1em;
+  box-shadow: 0 10px 10px -5px var(--blue-shadow-to);
 }
 
 .icon-button{
@@ -266,8 +264,33 @@ main{
   margin: 3em auto;
 }
 
+#mission-section > h2{
+  padding-top: 2em;
+}
 
-
+.free-estimate-bar{
+  background-color: var(--tp-accent-dark);
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.free-estimate-bar h3{
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 2px 2px 5px var(--tp-accent-hover);
+  font-family: 'Playfair Display', serif;
+}
+.free-estimate-bar h4{
+  color: var(--tp-medium-blue);
+  font-style: italic;
+  
+}
+.free-estimate-bar > div{
+  margin-right: 0.5em;
+}
 /* ==================FEATURE SECTION ================== */
 .feature{
   /* background-color: var(--tp-light-grey); */
@@ -315,18 +338,14 @@ main{
 }
 
 /* ==================SERVICES SECTION ================== */
-.services-section{
-  padding:0.5em;
-  margin-bottom: 5em;
-}
 
-main .services-section:last-child{
-  background-color: var(--tp-light-grey);
-}
 .services-top-bar{
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.services-top-bar > div{
+  margin: 3em 0 3em 0;
 }
 .services-top-bar div:first-child{
   display: flex;
@@ -339,6 +358,11 @@ main .services-section:last-child{
   margin: 0.5em;
   text-align: center;
   font-size: 1.2em;
+}
+.services-top-bar + p {
+  text-align: center;
+  font-size: 1em !important;
+
 }
 .services-section h2{
   text-align: center;
@@ -419,7 +443,6 @@ main .services-section:last-child{
   animation-fill-mode: forwards;
 }
 
-
 .services-section p{
   color: var(--tp-dark-blue);
   font-family: 'Playfair Display', serif;
@@ -427,16 +450,26 @@ main .services-section:last-child{
 }
 
 .services-sub-text{
-  padding: 3em 5em 1em 5em;
+  padding: 2em;
 }
-
-
 
 .services-sub-text h4{
   color: var(--tp-dark-blue);
+  margin-top: 2em;
 }
 .services-sub-text h4 + p{
  margin: 1em 0;
+}
+.services-sub-text h5{
+  margin: 1.5em 0;
+}
+.services-list-container + h5{
+  text-align: center;
+}
+.services-sub-text h3{
+  border-bottom: 2px solid var(--tp-accent-dark);
+  display: inline;
+  padding: 0 2em 0.2em 0;
 }
 .services-list-container{
   display: grid;
@@ -447,9 +480,11 @@ main .services-section:last-child{
 .services-list-container + p{
   text-align: center;
 }
-.services-list-container ~ button{
+.services-list-container ~ a{
   display: block;
-  margin: 5em auto;
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
 }
 .services-list-item{
   display: flex;
@@ -466,12 +501,17 @@ main .services-section:last-child{
   margin-right: 10px;
 }
 
+.commercial-section{
+  background-color: var(--tp-light-grey);
+}
+
 /* ==================CONTACT SECTION ================== */
+
 .contact-section{
   /* background-color: var(--tp-dark-blue); */
-  background: linear-gradient(rgba(0,0,0, 0.95), rgba(13, 6, 33, 0.95)), url('./assets/images/interiorxx.jpeg');
-  margin-top: 10em;
+  background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66, 0.95)), url('./assets/images/interiorxx.jpeg');
   background-size: cover;
+  padding: 3em;
 }
 .contact-section h3, .contact-section p{
   color: var(--tp-light-grey);
@@ -481,6 +521,11 @@ main .services-section:last-child{
 .contact-section p{
  font-style: italic;
  color: var(--tp-accent-dark);
+}
+.contact-section > h5{
+  color: var(--tp-accent-blue);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
 #form-stage2{
@@ -495,14 +540,14 @@ main .services-section:last-child{
 }
 
 .form-section{
-  width:25%;
+  width:20%;
   margin: 2em auto;
-  background-color: var(--tp-medium-blue);
-  padding: 2em;
+  /* background-color: var(--tp-medium-blue); */
+  padding: 1em;
 }
 
 .form-box{
-  margin: 1em 0;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
 }
@@ -570,21 +615,15 @@ main .services-section:last-child{
 /* ==============Media Queries ==============*/
 @media screen and (max-width: 1700px){
   .form-section{
-    width: 40%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 1500px){
-  section{
-    padding: 4em;
-  }
   .form-section{
-    width: 50%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 1300px){
-  section{
-    padding: 2em;
-  }
   .mission-inner{
     padding: 0 2em;
   }
@@ -605,7 +644,7 @@ main .services-section:last-child{
     width: 100%;
   }
   .form-section{
-    width: 60%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 900px ) {
@@ -622,9 +661,6 @@ main .services-section:last-child{
   .video-overlay{
     margin: 2em 0em 0em 2em;
     padding: 0;
-  }
-  section{
-    padding: 1em;
   }
   .services-section h2{
     font-size: 2em;
@@ -693,6 +729,9 @@ main .services-section:last-child{
     font-size: 1.6em;
   }
 
+  .slogan{
+    text-align: center;
+  }
   .feature{
     padding: 4em 0.5em;
     background-color: var(--tp-dark-blue);
@@ -725,6 +764,7 @@ main .services-section:last-child{
   .services-top-bar img{
     display: none;
   }
+
   .services-overlay{
     flex-direction: column;
   }
@@ -775,9 +815,6 @@ main .services-section:last-child{
   .contact-section{
     background: var(--tp-dark-blue);
     padding: 1em 0;
-  }
-  .form-section{
-    background-color: var(--tp-dark-blue);
   }
 }
 @media screen and (max-width:400px ) {

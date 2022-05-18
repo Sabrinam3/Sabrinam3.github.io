@@ -37,14 +37,13 @@ const paintOptions1 = [
 ];
 const paintOptions2 = ["Interior", "Exterior", "Both"];
 
-  export default function Contact({ value, setValue }) {
+  export default function Contact() {
     const classes = useStyles();
     const theme = useTheme();
     const [name, setName] = useState("");
     const [phoneSelected, setPhoneSelected] = useState(true);
     const [jobType, setJobType] = useState("Residential");
     const [jobDetail, setJobDetail] = useState("Interior");
-
 
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
@@ -121,34 +120,10 @@ const onRadioChange = (e) => {
     }
 }
 
-const handleToggleChange = (e) => {
-   switch(e.target.value){
-       case "Residential": {
-           setJobType("Residential");
-           break;
-       }
-       case "Commercial": {
-        setJobType("Commercial");
-        break;
-       }
-       case "Interior": {
-        setJobDetail("Interior");
-        break;
-       }
-       case "Exterior": {
-        setJobDetail("Exterior");
-        break;
-       }
-       case "Both": {
-        setJobDetail("Both");
-        break;
-       }
-   }
-
-}
+ 
 
 const changeFormSelection = (e) => {
-    if(e== "Next"){
+    if(e=== "Next"){
         document.getElementById("form-stage1").style.display = 'none';
         document.getElementById("form-stage2").style.display = 'block';
     }else if(e === "Previous"){
@@ -168,13 +143,15 @@ return(
             <div className="form-box">
                 <ToggleButtons options={paintOptions1} 
                 label={"What Type of Property Needs Painting?"}
-                handleToggleChange={handleToggleChange}
+                alignment={jobType}
+                setAlignment={setJobType}
                 />
             </div>    
             <div className="form-box">
                 <ToggleButtons options={paintOptions2} 
                 label={"What Needs Painting?"}
-                handleToggleChange={handleToggleChange}
+                alignment={jobDetail}
+                setAlignment={setJobDetail}
                 />
             </div>
             <div className="form-box">
@@ -206,7 +183,7 @@ return(
                     </FormControl>
             </div>   
             <div className="form-btn-box">
-                <button className="button2" value="Next" onClick={(e) => changeFormSelection(e.target.value)} >Next</button>
+                <button className="button1" value="Next" onClick={(e) => changeFormSelection(e.target.value)} >Next</button>
             </div> 
     </div>  
     <div id="form-stage2">
@@ -287,8 +264,8 @@ return(
               />  
             </div>
             <div className="form-btn-box">
-                <button className="button2" value="Previous" onClick={(e) => changeFormSelection(e.target.value)}>Previous</button>
-                <button className="button2" value="Submit" onClick={(e) => changeFormSelection(e.target.value)}>Submit</button>
+                <button className="button1" value="Previous" onClick={(e) => changeFormSelection(e.target.value)}>Previous</button>
+                <button className="button1" value="Submit" onClick={(e) => changeFormSelection(e.target.value)}>Submit</button>
             </div> 
         </div>    
     </div>
