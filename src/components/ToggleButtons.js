@@ -7,9 +7,9 @@ import FormLabel from '@mui/material/FormLabel';
 export default function ToggleButtons(props) {
 //   const [alignment, setAlignment] = React.useState(props.options[0]);
 
-useEffect(() => {
-    props.setAlignment(props.options[0]);
-},[]);
+// useEffect(() => {
+//     props.setAlignment(props.options[0]);
+// },[]);
 
   const handleChange = (
     event,

@@ -28,6 +28,9 @@ body{
 
 /* Common Components */
 
+.spacer-link{
+  height: 75px;
+}
 button{
   font-size: 0.8em;
 }
@@ -44,18 +47,19 @@ button{
 }
 .button1{
   border: none;
-  background-color: var(--tp-accent-dark);
-  padding: 0.8em 2em;
+  background-color: var(--tp-accent-blue);
+  padding: 0.5em 1.5em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
   color: #f0f0f0;
-  box-shadow: 0 10px 10px -5px var(--blue-shadow-to);
+  /* box-shadow: 0 10px 10px -5px var(--blue-shadow-to); */
+  transition: background-color 1s ease;
 }
 
 .button1:hover{
-  background-color: var(--tp-accent-hover);
-  box-shadow: var(--blue-box-shadow);
+  background-color: var(--tp-accent-dark);
+
 }
 
 .button2{
@@ -82,12 +86,25 @@ button{
   width: 200px;
 }
 
+.button3{
+  border: none;
+  background-color: transparent;
+  padding: 0.2em;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', serif;
+  color: var(--tp-accent-blue);
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.button3:hover{
+  /* border: 1px solid var(--tp-accent-dark); */
+  box-shadow: 5px 5px 5px -5px var(--tp-accent-dark);
+}
 
 .subheading{
   color: var(--tp-medium-blue);
-  font-size: 2.5em;
-  /* border-left: 2px solid var(--tp-accent-blue); */
-  /* padding: 0.5em; */
+
 }
 .subheading-2{
   font-family: 'Playfair Display', serif;
@@ -98,6 +115,10 @@ button{
 
 h3{
   font-size: 1.5em;
+}
+
+h2{
+  font-size: 2.2em;
 }
 
 a{
@@ -123,12 +144,17 @@ nav{
 }
 
 .nav-emphasis{
-  font-weight: bolder;
+  font-weight: bold;
   color: var(--tp-accent-blue);
 }
 .nav-emphasis-dark{
-  font-weight: bolder;
+  font-weight: bold;
   color: var(--tp-accent-dark);
+}
+
+nav a{
+  color: white;
+  font-family: 'Source Sans Pro', serif;
 }
 
 .nav-tel{
@@ -140,14 +166,12 @@ nav{
   text-align: center;
 }
 .nav-tel p:nth-of-type(1){
-  font-size:1.6em;
-  animation: pulse 2s infinite;
+  font-size:1.1em;
+  animation: pulse 3s infinite;
   text-align: center;
 }
 
-.nav-tel p:last-child {
-  font-family: 'Playfair Display', serif;
-}
+
 
 /* .contact-mobile-span{
   display: none;
@@ -156,6 +180,7 @@ nav{
 .contact-mobile-bar{
   display: none;
 }
+
 
 
 /* Header/Hero */
@@ -238,13 +263,14 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 3em;
 }
 .slogan{
   font-size: 1.1em;
   font-style: italic;
   color: var(--tp-medium-blue);
   font-family: 'Playfair Display', serif;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 .mission-statement{
   display: flex;
@@ -253,7 +279,7 @@ main{
 .mission-statement > div{
   width: 80%;
   padding: 2em;
-  text-align: center;
+  text-align: justify;
 }
 .mission-statement img{
   width: 30%;
@@ -268,33 +294,85 @@ main{
   padding-top: 2em;
 }
 
+/* ==================MISSION BANNER CONTACT SECTION ================== */
+
 .free-estimate-bar{
-  background-color: var(--tp-accent-dark);
+  background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.2)), url('./assets/images/mission.jpeg');
+  background-size: cover;
+  background-position: bottom;
   padding: 1em;
+
+  min-height: 400px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.free-estimate-bar > div{
+  width: 70%;
+  padding: 2em;
 }
 .free-estimate-bar h3{
   color: white;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
-  text-shadow: 2px 2px 5px var(--tp-accent-hover);
-  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px 5px var(--tp-dark-blue);
+  
 }
 .free-estimate-bar h4{
-  color: var(--tp-medium-blue);
-  font-style: italic;
-  
+  color: var(--tp-light-grey);
+  font-size: 0.9em;
+  margin: 3em 0;
+  font-family: 'Playfair Display', serif;
 }
 .free-estimate-bar > div{
   margin-right: 0.5em;
 }
+
+/* ==================FEATURE PREVIEW SECTION ================== */
+.services-preview{
+  display: flex;
+  justify-content: space-between;
+  margin: 4em 0;
+}
+
+.services-preview-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.services-preview img{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--tp-accent-dark);
+  margin: 2em;
+}
+
+.img-hover-zoom--blur img {
+  transition: transform 1s ease-in-out;
+  transform: scale(1);
+}
+.img-hover-zoom--blur:hover img {
+  transform: scale(1.2);
+}
+
+.services-preview-inner h3{
+  text-align: center;
+}
 /* ==================FEATURE SECTION ================== */
 .feature{
-  /* background-color: var(--tp-light-grey); */
-  background: linear-gradient(rgba(14,8,66, 0.95), rgba(13,6,33, 0.95)), url('./assets/images/residential3.jpeg');
+  background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66,0.95)), url('./assets/images/residential3.jpeg');
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -315,15 +393,21 @@ main{
 }
 
 .feature-container img{
-  width: 40px;
+  width: 30px;
   margin-right: 1.5em;
-  filter: invert(44%) sepia(58%) saturate(589%) hue-rotate(119deg) brightness(92%) contrast(86%);
+  filter: invert(72%) sepia(70%) saturate(240%) hue-rotate(123deg) brightness(83%) contrast(86%);
 }
 
+.feature h2{
+  text-align: center;
+  color: var(--tp-light-grey);
+  font-family: 'Source Sans Pro', serif;
+}
 .feature h3{
   text-align: center;
   color: var(--tp-accent-blue);
   font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
 }
 
 .feature h4{
@@ -332,9 +416,10 @@ main{
 }
 
 .feature-container ~ p{
-  padding: 0 1.5em;
-  /* color: var(--tp-dark-blue); */
-  color: var(--tp-grey);
+  padding: 0 3em;
+  color: var(--tp-light-grey);
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 /* ==================SERVICES SECTION ================== */
@@ -345,7 +430,7 @@ main{
   flex-direction: column;
 }
 .services-top-bar > div{
-  margin: 3em 0 3em 0;
+  margin: 3em 0 2em 0;
 }
 .services-top-bar div:first-child{
   display: flex;
@@ -445,7 +530,6 @@ main{
 
 .services-section p{
   color: var(--tp-dark-blue);
-  font-family: 'Playfair Display', serif;
   font-size: 0.8em;
 }
 
@@ -461,7 +545,7 @@ main{
  margin: 1em 0;
 }
 .services-sub-text h5{
-  margin: 1.5em 0;
+  margin: 0.5em 0;
 }
 .services-list-container + h5{
   text-align: center;
@@ -482,7 +566,7 @@ main{
 }
 .services-list-container ~ a{
   display: block;
-  margin: 3em 0;
+  margin: 1.5em 0;
   display: flex;
   justify-content: center;
 }
@@ -501,9 +585,6 @@ main{
   margin-right: 10px;
 }
 
-.commercial-section{
-  background-color: var(--tp-light-grey);
-}
 
 /* ==================CONTACT SECTION ================== */
 
@@ -511,7 +592,7 @@ main{
   /* background-color: var(--tp-dark-blue); */
   background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66, 0.95)), url('./assets/images/interiorxx.jpeg');
   background-size: cover;
-  padding: 3em;
+  padding: 6em 3em;
 }
 .contact-section h3, .contact-section p{
   color: var(--tp-light-grey);
@@ -522,7 +603,7 @@ main{
  font-style: italic;
  color: var(--tp-accent-dark);
 }
-.contact-section > h5{
+.contact-section h5{
   color: var(--tp-accent-blue);
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -545,7 +626,10 @@ main{
   /* background-color: var(--tp-medium-blue); */
   padding: 1em;
 }
-
+.form-section h4{
+  text-align: center;
+  color: var(--tp-accent-blue);
+}
 .form-box{
   margin-top: 1em;
   display: flex;
@@ -647,6 +731,18 @@ main{
     width: 50%;
   }
 }
+
+@media screen and (max-width: 1000px){
+  .services-preview{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .services-preview-inner{
+    margin-top: 1em;
+    width:90%;
+  }
+}
 @media screen and (max-width: 900px ) {
   .App-logo{
     width: 20%;
@@ -662,9 +758,7 @@ main{
     margin: 2em 0em 0em 2em;
     padding: 0;
   }
-  .services-section h2{
-    font-size: 2em;
-  }
+
   .feature-inner{
     width: 95%;
   }
@@ -727,6 +821,11 @@ main{
     animation: none;
     visibility: visible;
     font-size: 1.6em;
+  }
+
+  .free-estimate-bar > div{
+    width: 90%;
+    padding: 1em;
   }
 
   .slogan{

@@ -9,9 +9,14 @@ import paintbrush from "./assets/images/paintbrush.svg";
 import invoice from "./assets/images/invoice.svg";
 import arrowright from "./assets/images/arrow-right.svg";
 import interior from "./assets/images/interior.jpeg";
-
 import exterior from "./assets/images/exterior.jpeg";
 import exterior1 from "./assets/images/exterior1.jpeg";
+import exterior3 from "./assets/images/exterior3.jpeg";
+
+
+import featureinterior from "./assets/images/interiorxx.jpeg";
+import featureexterior from "./assets/images/exterior-feature.jpeg";
+import comfeature from "./assets/images/commercial-feature.jpeg";
 
 import commercial1 from "./assets/images/commercial1.jpeg";
 import commercial2 from "./assets/images/commercial2.jpeg";
@@ -20,7 +25,6 @@ import commercial3 from "./assets/images/commercial3.jpeg";
 import "./App.css";
 
 import Contact from "./components/Contact.js";
-
 
 function App() {
   return (
@@ -32,10 +36,15 @@ function App() {
           {/* <div className="contact-mobile-span">
             <button className="button">Contact Us</button>
           </div> */}
-          <p>(519) 859-9458</p>
-          <p>
-            Call Now for a <span className="nav-emphasis">Free</span> Estimate
-          </p>
+          <a href="tel:5198599458">
+            <p>(519) 859-9458</p>
+          </a>
+          <a href="tel:5198599458">
+            <p>
+              Call Now for a <span className="nav-emphasis">Free</span> Estimate
+            </p>
+          </a>
+        
         </div>
       </nav>
       <div className="contact-mobile-bar">
@@ -72,7 +81,7 @@ function App() {
           <h2 className="subheading">Our Mission</h2>
           <h3 className="slogan">
             Doing the Project Properly the{" "}
-            <span className="nav-emphasis">First Time</span>
+            <span className="nav-emphasis-dark">First Time</span>
           </h3>
           <div className="mission-statement">
             <div>
@@ -80,30 +89,69 @@ function App() {
                 At ThieLot Painting, we take pride in{" "}
                 <span className="nav-emphasis">every project</span>. That is why
                 we bring top quality workmanship and meticulous attention to
-                detail to every job - large or small.
-              </p>
-              <p>
-                We remain dedicated to delivering the{" "}
+                detail to every job - large or small. We remain dedicated to
+                delivering the{" "}
                 <span className="nav-emphasis">best quality</span> at the most{" "}
                 <span className="nav-emphasis">competitive price</span> by
                 combining current technology with old fashioned values and
-                service.
-              </p>
-              <p>
-                We are a family run business with over{" "}
+                service. We are a family run business with over{" "}
                 <span className="nav-emphasis">x years </span>of industry
                 experience and knowledge. Let us help make your home or business
                 look its best!{" "}
               </p>
             </div>
-
-            {/* <img src={mission} alt=""/> */}
+          </div>
+          {/* Services Preview */}
+          <div className="services-preview">
+            <div className="services-preview-inner">
+              <div className="img-hover-zoom img-hover-zoom--blur">
+                <img src={featureinterior} alt="" />
+              </div>
+              <h3>Interior Painting</h3>
+              <a href="#interior">
+                <button className="button3">Learn More</button>
+              </a>
+            </div>
+            <div className="services-preview-inner">
+              <div className="img-hover-zoom img-hover-zoom--blur">
+                <img src={featureexterior} alt="" />
+              </div>
+              <h3>Exterior Painting</h3>
+              <a href="#exterior">
+                <button className="button3">Learn More</button>
+              </a>
+            </div>
+            <div className="services-preview-inner">
+              <div className="img-hover-zoom img-hover-zoom--blur">
+                <img src={comfeature} alt="" />
+              </div>
+              <h3>Commercial Painting</h3>
+              <a href="#commercial">
+                <button className="button3">Learn More</button>
+              </a>
+            </div>
           </div>
         </section>
+        {/* Estimate Bar */}
+
+        <div className="free-estimate-bar">
+          <div>
+            <h3>
+              ThieLot Painting Delivers the Highest Level of Professionalism and
+              Quality
+            </h3>
+            <h4>
+              We provide our expert opinion at every stage of the project and
+              are always willing to provide a free estimate
+            </h4>
+            <a href="#contact">
+              <button className="button1">Contact Us Now</button>
+            </a>
+          </div>
+        </div>
 
         <section className="feature">
-          <h2 className="subheading-2">ThieLot Painting</h2>
-          <h4>Offers You</h4>
+          <h2 className="subheading-2">Why ThieLot Painting?</h2>
           <div className="feature-inner">
             <div>
               <div className="feature-container">
@@ -163,26 +211,10 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="free-estimate-bar">
-            <div>
-              <h3>
-                ThieLot Painting Delivers the Highest Level of Professionalism
-                and Quality
-              </h3>
-              <h4>
-                We provide our expert opinion at every stage of the project and
-                are always willing to provide a free estimate
-              </h4>
-            </div>
-
-            <a href="#contact">
-              <button className="button2">Contact Us Today</button>
-            </a>
-          </div>
         <section className="services-section">
           <div className="services-top-bar">
             <div>
-              <img src={logosmall} alt="" />
+
               <h2 className="subheading">
                 <span className="nav-emphasis-dark">Residential</span> Painting
                 Services
@@ -218,7 +250,7 @@ function App() {
             </div>
           </div>
           {/* Interior Painting */}
-
+          <div className="spacer-link" id="interior"></div>
           <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Interior</span> Painting
@@ -275,10 +307,10 @@ function App() {
             <a href="#contact">
               <button className="button1">Interior Painting Quote</button>
             </a>
-           
           </div>
 
           {/* Exterior Painting */}
+          <div className="spacer-link" id="exterior"></div>
           <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Exterior</span> Painting
@@ -339,7 +371,7 @@ function App() {
           <div className="commercial-section">
             <div className="services-top-bar">
               <div>
-                <img src={logosmall} alt="" />
+
                 <h2 className="subheading">
                   <span className="nav-emphasis-dark">Commercial</span> Painting
                   Services
@@ -377,6 +409,7 @@ function App() {
               </div>
             </div>
             {/* Commercial Painting Services */}
+            <div className="spacer-link" id="commercial"></div>
             <div className="services-sub-text">
               <h3>
                 <span className="nav-emphasis-dark">Commercial</span> Painting
@@ -440,7 +473,7 @@ function App() {
         {/* Contact Section */}
         <section className="contact-section" id="contact">
           <h3>Submit a Service Inquiry</h3>
-          <h5>We're Just as Excited About Your Project As You Are!</h5>
+          {/* <h5>We're Just as Excited About Your Project As You Are!</h5> */}
           <Contact />
         </section>
       </main>
