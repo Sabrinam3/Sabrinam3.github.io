@@ -104,12 +104,12 @@ button{
 
 .subheading{
   color: var(--tp-medium-blue);
+  padding: 0.2em;
 
 }
 .subheading-2{
   font-family: 'Playfair Display', serif;
   color: var(--tp-accent-dark);
-  font-size: 2.5em;
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ h3{
 }
 
 h2{
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 a{
@@ -357,6 +357,7 @@ main{
   border-radius: 50%;
   border: 1px solid var(--tp-accent-dark);
   margin: 2em;
+  display: flex;
 }
 
 .img-hover-zoom--blur img {
@@ -372,7 +373,9 @@ main{
 }
 /* ==================FEATURE SECTION ================== */
 .feature{
-  background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66,0.95)), url('./assets/images/residential3.jpeg');
+  background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66,0.95)), url('./assets/images/mission2.jpeg');
+  background-size: cover;
+  background-position: center;
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -407,7 +410,7 @@ main{
   text-align: center;
   color: var(--tp-accent-blue);
   font-family: 'Playfair Display', serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .feature h4{
@@ -531,6 +534,7 @@ main{
 .services-section p{
   color: var(--tp-dark-blue);
   font-size: 0.8em;
+  padding:0.5em;
 }
 
 .services-sub-text{
@@ -553,7 +557,7 @@ main{
 .services-sub-text h3{
   border-bottom: 2px solid var(--tp-accent-dark);
   display: inline;
-  padding: 0 2em 0.2em 0;
+  padding-bottom: 0.2em;
 }
 .services-list-container{
   display: grid;
@@ -736,6 +740,7 @@ main{
   .services-preview{
     flex-direction: column;
     margin: 0;
+    align-items: center;
   }
 
   .services-preview-inner{
@@ -794,13 +799,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--tp-dark-blue);
+ 
     position: sticky;
     top: 0;
     z-index: 4;
     height: 40px;
   }
   
+  .contact-mobile-bar a{
+    color: var(--tp-dark-blue);
+  }
   .contact-mobile-bar p{
     animation: pulse 3s infinite;
     font-size: 1.1em;
@@ -822,7 +830,16 @@ main{
     visibility: visible;
     font-size: 1.6em;
   }
+  
+  #mission-section{
+    padding: 1em;
+  }
 
+  .free-estimate-bar{
+    background:  linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('./assets/images/mission.jpeg');
+    background-position: right;
+    background-size: cover;
+  }
   .free-estimate-bar > div{
     width: 90%;
     padding: 1em;

@@ -31,11 +31,7 @@ function App() {
     <div className="App">
       <nav>
         <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
-        {/* <p className="nav-slogan">Doing the Project Properly the <span className="nav-emphasis">First Time</span></p> */}
         <div className="nav-tel">
-          {/* <div className="contact-mobile-span">
-            <button className="button">Contact Us</button>
-          </div> */}
           <a href="tel:5198599458">
             <p>(519) 859-9458</p>
           </a>
@@ -48,9 +44,12 @@ function App() {
         </div>
       </nav>
       <div className="contact-mobile-bar">
-        <p>
+      <a href="tel:5198599458">
+      <p>
           Call Now for a <span className="nav-emphasis">Free</span> Estimate
         </p>
+      </a>
+      
       </div>
 
       <header className="App-header">
