@@ -198,25 +198,31 @@ nav a{
 }
 
 /* Nav Sub_menu */
-.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+.MuiAppBar-root{
   background-color: var(--tp-accent-blue) !important;
   position: sticky !important;
   top: 0;
   z-index: 999; 
   flex-direction: row !important;
   align-items: center !important;
+  justify-content: space-between !important;
 }
 
+.MuiContainer-root{
+  width: auto !important;
+  margin: 0 !important;
+}
 
-.css-hip9hq-MuiPaper-root-MuiAppBar-root a{
+.MuiAppBar-root a{
   color: white;
 }
-.css-1q39md6-MuiButtonBase-root-MuiButton-root{
+.MuiButton-root{
   margin: 0.5em 2em !important;
   font-size: 0.8em !important;
+  padding: 0 !important;
 }
 
-.css-1uwgr7b-MuiTypography-root{
+.MuiTypography-root{
   font-size: 1.3em !important;
   margin: 0.8em 0 !important;
   color: var(--tp-dark-blue) !important;
