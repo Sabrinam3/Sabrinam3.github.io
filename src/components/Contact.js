@@ -23,10 +23,10 @@ const useStyles = makeStyles((theme) => ({
   },
   label: {
     color: "white !important",
-    fontFamily: "Playfair Display",
+    fontSize: "0.7em !important"
   },
   input: {
-    color: "white !important",
+    color: "white !important"
   },
 }));
 
@@ -97,7 +97,7 @@ export default function Contact() {
   const submitContactForm = () => {
     //validate the form
     if (!validateForm()) {
-      setFormStatus("Fix validation errors and submit again");
+      setFormStatus("Oops! Please fill in the required fields and try again");
     } else {
       //Send the email
       var templateParams = {
@@ -117,7 +117,7 @@ export default function Contact() {
         )
         .then(
           (result) => {
-            setFormStatus("Thank you! Talk to you soon.");
+            setFormStatus("Thank you! We will be in touch soon.");
             setName("");
             setPhone("");
             setEmail("");
@@ -154,7 +154,7 @@ export default function Contact() {
         </div>
         <div className="form-btn-box">
           <button
-            className="button1"
+            className="button4"
             value="Next"
             onClick={(e) => changeFormSelection(e.target.value)}
           >
@@ -175,6 +175,7 @@ export default function Contact() {
             type="text"
             value={name}
             variant="outlined"
+            size="small"
             InputProps={{
               classes: {
                 notchedOutline: classes.notchedOutline,
@@ -200,7 +201,9 @@ export default function Contact() {
             type="tel"
             value={phone}
             variant="outlined"
+            size="small"
             fullWidth
+            required
             InputProps={{
               classes: {
                 notchedOutline: classes.notchedOutline,
@@ -224,7 +227,9 @@ export default function Contact() {
             type="email"
             value={email}
             variant="outlined"
+            size="small"
             fullWidth
+            required
             InputProps={{
               classes: {
                 notchedOutline: classes.notchedOutline,
@@ -254,7 +259,6 @@ export default function Contact() {
               variant="outlined"
               fullWidth
               multiline
-              minRows={5}
               InputProps={{
                 classes: {
                   notchedOutline: classes.notchedOutline,
@@ -275,14 +279,14 @@ export default function Contact() {
         </div>
         <div className="form-btn-box">
           <button
-            className="button1"
+            className="button4"
             value="Previous"
             onClick={(e) => changeFormSelection(e.target.value)}
           >
             Previous
           </button>
           <button
-            className="button1"
+            className="button4"
             value="Submit"
             onClick={(e) => submitContactForm()}
           >

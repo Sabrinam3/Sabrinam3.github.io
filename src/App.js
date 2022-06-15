@@ -1,4 +1,6 @@
 import React from "react";
+
+
 import logo from "./assets/images/logo.png";
 import logosmall from "./assets/images/logo-small.png";
 import heroVideo from "./assets/video/hero.mp4";
@@ -25,6 +27,22 @@ import commercial3 from "./assets/images/commercial3.jpeg";
 import "./App.css";
 
 import Contact from "./components/Contact.js";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+
+
+
+
+var myScrollFunc = function() {
+  const myID = document.getElementById("dynamic-call");
+  var y = window.scrollY;
+  if (y >= 100) {
+    myID.className = "dynamic-call-show"
+  } else {
+    myID.className = "dynamic-call-hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
 
 function App() {
   return (
@@ -43,11 +61,12 @@ function App() {
         
         </div>
       </nav>
+      <ResponsiveAppBar/>
       <div className="contact-mobile-bar">
       <a href="tel:5198599458">
       <p>
           Call Now for a <span className="nav-emphasis">Free</span> Estimate
-        </p>
+      </p>
       </a>
       
       </div>
@@ -76,6 +95,7 @@ function App() {
         ></video>
       </header>
       <main>
+      <div className="spacer-link" id="mission"></div>
         <section id="mission-section">
           <h2 className="subheading">Our Mission</h2>
           <h3 className="slogan">
@@ -148,7 +168,7 @@ function App() {
             </a>
           </div>
         </div>
-
+        <div className="spacer-link" id="difference"></div>
         <section className="feature">
           <h2 className="subheading-2">Why ThieLot Painting?</h2>
           <div className="feature-inner">
@@ -210,6 +230,7 @@ function App() {
             </div>
           </div>
         </section>
+        <div className="spacer-link" id="services"></div>
         <section className="services-section">
           <div className="services-top-bar">
             <div>
@@ -472,10 +493,12 @@ function App() {
         {/* Contact Section */}
         <section className="contact-section" id="contact">
           <h3>Submit a Service Inquiry</h3>
-          {/* <h5>We're Just as Excited About Your Project As You Are!</h5> */}
           <Contact />
         </section>
       </main>
+      <footer>
+
+      </footer>
     </div>
   );
 }

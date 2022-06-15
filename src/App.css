@@ -102,6 +102,17 @@ button{
   box-shadow: 5px 5px 5px -5px var(--tp-accent-dark);
 }
 
+.button4{
+  border: none;
+  background-color: transparent;
+  padding: 0.5em;
+  font-family: 'Source Sans Pro', serif;
+  color: var(--tp-light-grey);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+
 .subheading{
   color: var(--tp-medium-blue);
   padding: 0.2em;
@@ -114,7 +125,7 @@ button{
 }
 
 h3{
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 h2{
@@ -131,6 +142,17 @@ a{
   max-width:250px;
   min-width:175px;
 }
+
+.logo-small{
+  width: 4%;
+  max-width:75px;
+  min-width:50px;
+}
+.logo-dark{
+  width: 4%;
+  max-width:75px;
+  min-width:50px;
+}
 nav{
   background-color: var(--tp-dark-blue);
   display: flex;
@@ -138,9 +160,9 @@ nav{
   align-items: center;
   color: #f0f0f0;
   padding: 0.5em;
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 999; */
 }
 
 .nav-emphasis{
@@ -150,6 +172,10 @@ nav{
 .nav-emphasis-dark{
   font-weight: bold;
   color: var(--tp-accent-dark);
+}
+.nav-emphasis-white{
+  font-weight: bold;
+  color: white;
 }
 
 nav a{
@@ -171,11 +197,46 @@ nav a{
   text-align: center;
 }
 
+/* Nav Sub_menu */
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  background-color: var(--tp-accent-blue) !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 999; 
+  flex-direction: row !important;
+  align-items: center !important;
+}
 
 
-/* .contact-mobile-span{
+.css-hip9hq-MuiPaper-root-MuiAppBar-root a{
+  color: white;
+}
+.css-1q39md6-MuiButtonBase-root-MuiButton-root{
+  margin: 0.5em 2em !important;
+  font-size: 0.8em !important;
+}
+
+.css-1uwgr7b-MuiTypography-root{
+  font-size: 1.3em !important;
+  margin: 0.8em 0 !important;
+  color: var(--tp-dark-blue) !important;
+  font-family: 'Source Sans Pro', serif !important;
+}
+
+.dynamic-call-show{
+  display: inherit;
+}
+
+.dynamic-call-hide{
   display: none;
-} */
+}
+
+#dynamic-call{
+  font-weight: bolder;
+  animation: lightSpeedInLeft 3s;
+  margin-right: 0.8em;
+
+}
 
 .contact-mobile-bar{
   display: none;
@@ -262,11 +323,10 @@ main{
   padding: 3em;
 }
 .slogan{
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: italic;
   color: var(--tp-medium-blue);
   font-family: 'Playfair Display', serif;
-  margin: 1em 0;
 }
 .mission-statement{
   display: flex;
@@ -581,7 +641,7 @@ main{
 }
 .services-list-item img{
   filter: invert(44%) sepia(58%) saturate(589%) hue-rotate(119deg) brightness(92%) contrast(86%);
-  width: 20px;
+  width: 20px;  
   margin-right: 10px;
 }
 
@@ -594,7 +654,7 @@ main{
   background-size: cover;
   padding: 6em 3em;
 }
-.contact-section h3, .contact-section p{
+.contact-section h3{
   color: var(--tp-light-grey);
   text-align: center;
   margin-bottom: 0.5em;
@@ -605,8 +665,7 @@ main{
 }
 .contact-section h5{
   color: var(--tp-accent-blue);
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-weight:500;
 }
 
 #form-stage2{
@@ -629,6 +688,8 @@ main{
 .form-section h4{
   text-align: center;
   color: var(--tp-accent-blue);
+  font-style: italic;
+  font-size:0.8em;
 }
 .form-box{
   margin-top: 1em;
@@ -643,7 +704,6 @@ main{
 }
 .MuiFormLabel-root, .MuiFormControlLabel-root, .MuiFormControlLabel-label{
   color: white !important;
-  font-family: 'Playfair Display', serif !important;
 }
 
 .MuiFormLabel-root{
@@ -653,8 +713,12 @@ main{
   margin: 0;
 }
 .MuiToggleButton-root{
-  color: white !important;
+  color: var(--tp-accent-hover) !important;
   width: 125px;
+  border:1px solid !important;
+}
+.MuiToggleButton-root.Mui-selected{
+  color: white !important;
 }
 .MuiRadio-root{
   color: var(--tp-accent-hover) !important;
@@ -671,12 +735,16 @@ main{
 .form-btn-box{
   display: flex;
   justify-content: center;
-  margin: 3em 0;
+  margin: 1em 0;
 }
 .form-btn-box button{
   margin: 0 1em;
 }
-
+textarea{
+  min-height:75px !important;
+  max-height: 100px !important; 
+  overflow-y: scroll !important;
+}
 
 
 
@@ -751,6 +819,9 @@ main{
     min-width:150px;
     margin: 0.5em;
   }
+  .logo-dark{
+   display: none;
+  }
   /* .App-header video{
     min-height:500px;
     object-fit: initial;
@@ -792,7 +863,9 @@ main{
   .contact-desktop-span{
     display: none;
   }
-
+  #dynamic-call{
+   display:none;
+  }
   .contact-mobile-bar{
     display: inherit;
     background-color: white;
@@ -801,7 +874,7 @@ main{
     align-items: center;
  
     position: sticky;
-    top: 0;
+    top: 63px;
     z-index: 4;
     height: 40px;
   }
