@@ -95,7 +95,6 @@ function App() {
         ></video>
       </header>
       <main>
-      <div className="spacer-link" id="mission"></div>
         <section id="mission-section">
           <h2 className="subheading">Our Mission</h2>
           <h3 className="slogan">
@@ -126,7 +125,16 @@ function App() {
               <div className="img-hover-zoom img-hover-zoom--blur">
                 <img src={featureinterior} alt="" />
               </div>
+              <div className="services-preview-inner-text">
               <h3>Interior Painting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+              </p>
+              </div>
+           
               <a href="#interior">
                 <button className="button3">Learn More</button>
               </a>
@@ -135,7 +143,15 @@ function App() {
               <div className="img-hover-zoom img-hover-zoom--blur">
                 <img src={featureexterior} alt="" />
               </div>
+              <div className="services-preview-inner-text">
               <h3>Exterior Painting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+              </p>
+              </div>
               <a href="#exterior">
                 <button className="button3">Learn More</button>
               </a>
@@ -144,7 +160,15 @@ function App() {
               <div className="img-hover-zoom img-hover-zoom--blur">
                 <img src={comfeature} alt="" />
               </div>
+              <div className="services-preview-inner-text">
               <h3>Commercial Painting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.vulputate lectus quis, commodo diam.
+              </p>
+              </div>
               <a href="#commercial">
                 <button className="button3">Learn More</button>
               </a>
@@ -168,9 +192,8 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="spacer-link" id="difference"></div>
-        <section className="feature">
-          <h2 className="subheading-2">Why ThieLot Painting?</h2>
+        <section className="feature" id="difference">
+          <h2 className="subheading-2">Why Choose ThieLot Painting?</h2>
           <div className="feature-inner">
             <div>
               <div className="feature-container">
@@ -230,8 +253,7 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="spacer-link" id="services"></div>
-        <section className="services-section">
+        <section className="services-section"  id="residential">
           <div className="services-top-bar">
             <div>
 
@@ -270,7 +292,6 @@ function App() {
             </div>
           </div>
           {/* Interior Painting */}
-          <div className="spacer-link" id="interior"></div>
           <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Interior</span> Painting
@@ -330,7 +351,6 @@ function App() {
           </div>
 
           {/* Exterior Painting */}
-          <div className="spacer-link" id="exterior"></div>
           <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Exterior</span> Painting
@@ -388,7 +408,7 @@ function App() {
               <button className="button1">Exterior Painting Quote</button>
             </a>
           </div>
-          <div className="commercial-section">
+          <div className="commercial-section" id="commercial">
             <div className="services-top-bar">
               <div>
 
@@ -429,7 +449,6 @@ function App() {
               </div>
             </div>
             {/* Commercial Painting Services */}
-            <div className="spacer-link" id="commercial"></div>
             <div className="services-sub-text">
               <h3>
                 <span className="nav-emphasis-dark">Commercial</span> Painting

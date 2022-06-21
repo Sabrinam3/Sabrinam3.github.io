@@ -93,7 +93,7 @@ button{
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   color: var(--tp-accent-blue);
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: bolder;
 }
 
@@ -103,13 +103,20 @@ button{
 }
 
 .button4{
-  border: none;
+  border: 1px solid var(--tp-accent-hover);
   background-color: transparent;
-  padding: 0.5em;
+  padding: 0.3em 2em;
   font-family: 'Source Sans Pro', serif;
-  color: var(--tp-light-grey);
+  color: var(--tp-accent-hover);
   font-size: 0.8em;
-  font-weight: bold;
+  margin: 2em 0;
+  border-radius: 4px;
+  transition: all 1s ease;
+}
+
+.button4:hover{
+  background-color: var(--tp-accent-dark);
+  color: white;
 }
 
 
@@ -220,15 +227,22 @@ nav a{
   margin: 0.5em 2em !important;
   font-size: 0.8em !important;
   padding: 0 !important;
+  color: white !important;
 }
 
 .MuiTypography-root{
-  font-size: 1.3em !important;
   margin: 0.8em 0 !important;
-  color: var(--tp-dark-blue) !important;
   font-family: 'Source Sans Pro', serif !important;
+  color: var(--tp-accent-hover) !important;
+  font-weight: 500 !important;
 }
 
+.MuiMenuItem-root{
+  font-size: 0.7em !important;
+}
+.MuiPopover-paper, .MuiMenuItem-root{
+  background-color: var(--tp-dark-blue) !important;
+}
 .dynamic-call-show{
   display: inherit;
 }
@@ -405,21 +419,29 @@ main{
   align-items: center;
   width: 30%;
   max-width: 500px;
-  max-height: 500px;
+  box-shadow: 0 2px 2px 0px rgb(0 0 0 / 10%), 0 0 4px 0 rgb(0 0 0 / 8%);
+}
+.services-preview-inner-text{
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.services-preview-inner p{
+  text-align: justify;
+  padding: 1em;
+  font-size: 0.8em;
 }
 
 .services-preview img{
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
+  width:100%;
+
 }
 
 .img-hover-zoom {
   overflow: hidden;
-  border-radius: 50%;
-  border: 1px solid var(--tp-accent-dark);
-  margin: 2em;
-  display: flex;
+  margin-bottom: 1em;
+  width:100%;
 }
 
 .img-hover-zoom--blur img {
@@ -431,14 +453,17 @@ main{
 }
 
 .services-preview-inner h3{
-  text-align: center;
+  text-align: center; 
+  color: var(--tp-dark-blue);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
 }
 /* ==================FEATURE SECTION ================== */
 .feature{
   background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66,0.95)), url('./assets/images/mission2.jpeg');
   background-size: cover;
   background-position: center;
-  padding: 4em;
+  padding: 5em 4em;
   display: flex;
   flex-direction: column;
   align-items:  center;
@@ -651,6 +676,10 @@ main{
   margin-right: 10px;
 }
 
+.commercial-section{
+  margin-bottom: 5em;
+}
+
 
 /* ==================CONTACT SECTION ================== */
 
@@ -663,7 +692,8 @@ main{
 .contact-section h3{
   color: var(--tp-light-grey);
   text-align: center;
-  margin-bottom: 0.5em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
 }
 .contact-section p{
  font-style: italic;
@@ -671,7 +701,6 @@ main{
 }
 .contact-section h5{
   color: var(--tp-accent-blue);
-  font-weight:500;
 }
 
 #form-stage2{
@@ -687,15 +716,17 @@ main{
 
 .form-section{
   width:20%;
-  margin: 2em auto;
+  margin: 1em auto;
   /* background-color: var(--tp-medium-blue); */
   padding: 1em;
+
 }
-.form-section h4{
+#form-status{
   text-align: center;
-  color: var(--tp-accent-blue);
+  color: var(--tp-accent-hover);
   font-style: italic;
-  font-size:0.8em;
+  font-size:0.6em;
+  margin: 0.5em 0;
 }
 .form-box{
   margin-top: 1em;
@@ -708,6 +739,7 @@ main{
 .MuiFormControl-root{
   width: 100%;
 }
+
 .MuiFormLabel-root, .MuiFormControlLabel-root, .MuiFormControlLabel-label{
   color: white !important;
 }
@@ -744,14 +776,31 @@ main{
   margin: 1em 0;
 }
 .form-btn-box button{
-  margin: 0 1em;
+  margin: 2em 1em;
 }
-textarea{
+/* textarea{
   min-height:75px !important;
   max-height: 100px !important; 
   overflow-y: scroll !important;
+} */
+
+/*Toggle Switch */
+.toggle-group{
+  margin: 0.5em 0;
 }
 
+.MuiGrid-item{
+  color: white;
+  font-size: 0.7em;
+
+}
+
+.MuiSwitch-thumb{
+  background-color: var(--tp-accent-hover) !important;
+}
+.MuiSwitch-track{
+  background-color: var(--tp-accent-dark) !important;
+}
 
 
 
@@ -880,7 +929,7 @@ textarea{
     align-items: center;
  
     position: sticky;
-    top: 63px;
+    top: 55px;
     z-index: 4;
     height: 40px;
   }
@@ -898,6 +947,7 @@ textarea{
     display: flex;
     align-items: center;
   }
+
 
   .App-header h1{
     font-size: 2.5em;
@@ -928,7 +978,7 @@ textarea{
     text-align: center;
   }
   .feature{
-    padding: 4em 0.5em;
+    padding: 5em 0.5em;
     background-color: var(--tp-dark-blue);
   }
   .feature-container{
@@ -956,6 +1006,10 @@ textarea{
     color: var(--tp-grey);
     text-align: center;
   }
+
+  .services-section{
+    padding-top: 3em;
+  }
   .services-top-bar img{
     display: none;
   }
@@ -976,6 +1030,11 @@ textarea{
 }
 
 @media screen and (max-width: 500px ) {
+  .mission-statement > div{
+    width: 90%;
+    padding: 1em;
+
+  }
  
   .mission-inner ~ img{
     width: 100%;
@@ -1006,7 +1065,7 @@ textarea{
   }
   .contact-section{
     background: var(--tp-dark-blue);
-    padding: 1em 0;
+    padding: 6em 0;
   }
 }
 @media screen and (max-width:400px ) {

@@ -15,6 +15,8 @@ import MenuItem from "@mui/material/MenuItem";
 import logosmall from "../assets/images/logodark.png";
 import phone from "../assets/images/phone.svg";
 
+import BasicMenu from "./BasicMenu";
+
 // const pages = ["About Us", "The ThieLot Difference", "Services", "Contact Us"];
 const pages = [
   { link: "#mission", text: "About Us" },
@@ -22,25 +24,20 @@ const pages = [
   { link: "#services", text: "Services" },
   { link: "#contact", text: "Contact Us" },
 ];
-const services = ["Residential Painting", "Commercial Painting"];
+const services = [
+  { link: "#residential", text: "Residential Painting" },
+  { link: "#commercial", text: "Commercial Painting" },
+];
 
 export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -77,28 +74,76 @@ export default function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page.link} onClick={handleCloseNavMenu}>
-                  <a href={page.link}>
-                    <Typography textAlign="center">{page.text}</Typography>
-                  </a>
-                </MenuItem>
-              ))}
+              {/* About Us  */}
+              <MenuItem key={"About"} onClick={handleCloseNavMenu}>
+                <a href={"#mission-section"}>
+                  <Typography textAlign="center">ABOUT US</Typography>
+                </a>
+              </MenuItem>
+
+              {/* ThieLot Difference */}
+              <MenuItem key={"Difference"} onClick={handleCloseNavMenu}>
+                <a href={"#difference"}>
+                  <Typography textAlign="center">
+                    THE THIELOT DIFFERENCE
+                  </Typography>
+                </a>
+              </MenuItem>
+
+              {/* Services */}
+              <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
+                <a href={"#residential"}>
+                  <Typography textAlign="center">RESIDENTIAL PAINTING</Typography>
+                </a>
+              </MenuItem>
+              <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
+                <a href={"#commercial"}>
+                  <Typography textAlign="center">COMMERCIAL PAINTING</Typography>
+                </a>
+              </MenuItem>
+
+              {/* Contact Us */}
+              <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
+                <a href={"#contact"}>
+                  <Typography textAlign="center">CONTACT US</Typography>
+                </a>
+              </MenuItem>
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
-            {pages.map((page) => (
-              <a href={page.link}>
-                <Button
-                  key={page.link}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  {page.text}
-                </Button>
-              </a>
-            ))}
+            {/* About Us */}
+            <a href={"#mission-section"}>
+              <Button
+                key={"mission"}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                About Us
+              </Button>
+            </a>
+            {/* ThieLot Difference */}
+            <a href={"#difference"}>
+              <Button
+                key={"difference"}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                The ThieLot Difference
+              </Button>
+            </a>
+            {/* Services*/}
+            <BasicMenu mainItem="Services" subItems={services} />
+            {/* Contact Us*/}
+            <a href={"#contact"}>
+              <Button
+                key={"contact"}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Contact Us
+              </Button>
+            </a>
           </Box>
         </Toolbar>
       </Container>

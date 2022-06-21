@@ -11,6 +11,7 @@ import {
 
 import "../App.css";
 import RowRadioButtonsGroup from "./RowRadioButtonsGroup";
+import ToggleSwitch from "./ToggleSwitch";
 import ToggleButtons from "./ToggleButtons";
 
 import emailjs from "@emailjs/browser";
@@ -23,10 +24,10 @@ const useStyles = makeStyles((theme) => ({
   },
   label: {
     color: "white !important",
-    fontSize: "0.7em !important"
+    fontSize: "0.7em !important",
   },
   input: {
-    color: "white !important"
+    color: "white !important",
   },
 }));
 
@@ -51,8 +52,8 @@ export default function Contact() {
   const [messageStatus, setMessageStatus] = useState("");
   const [formStatus, setFormStatus] = useState("");
 
-  const onRadioChange = (e) => {
-    if (e.target.value === "email") {
+  const onToggleChange = (e) => {
+    if (phoneSelected) {
       document.getElementById("email-box").style.display = "block";
       document.getElementById("phone-box").style.display = "none";
       setPhoneSelected(false);
@@ -74,20 +75,21 @@ export default function Contact() {
     }
   };
 
-
   const validateForm = () => {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let re2 = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     let nameValid = name !== "";
-    let contactValid = phoneSelected ? phone !== "" && re2.test(phone) : email !== "" && re.test(email);
-  
+    let contactValid = phoneSelected
+      ? phone !== "" && re2.test(phone)
+      : email !== "" && re.test(email);
+
     setNameStatus(nameValid ? "" : "Enter your name");
 
-    if(phoneSelected && !contactValid){
+    if (phoneSelected && !contactValid) {
       setPhoneStatus("Enter a valid phone number");
     }
-    
-    if(!phoneSelected && !contactValid){
+
+    if (!phoneSelected && !contactValid) {
       setEmailStatus("Enter a valid email address");
     }
 
@@ -105,7 +107,7 @@ export default function Contact() {
         reply_to: phoneSelected ? phone : email,
         message_html: message,
         job_type: jobType,
-        job_detail: jobDetail
+        job_detail: jobDetail,
       };
 
       emailjs
@@ -133,9 +135,12 @@ export default function Contact() {
   };
 
   return (
+    <div>
+            <h4 id="form-status">{formStatus}</h4>
+
     <div className="form-section">
       <div id="form-stage1">
-      <h5>Step 1 - Tell us About Your Project(optional)</h5>
+        <h5>Step 1 - Tell us About Your Project(optional)</h5>
         <div className="form-box">
           <ToggleButtons
             options={paintOptions1}
@@ -163,13 +168,11 @@ export default function Contact() {
         </div>
       </div>
       <div id="form-stage2">
-      <h5>Step 2 - Tell Us How To Reach You</h5>
-        <div className="form-box">
-          <RowRadioButtonsGroup
-            onRadioChange={onRadioChange}
-            phoneSelected={phoneSelected}
-          />
-        </div>
+        <h5>Step 2 - Tell Us How To Reach You</h5>
+        <ToggleSwitch
+          onToggleChange={onToggleChange}
+          phoneSelected={phoneSelected}
+        />
         <div className="form-box">
           <TextField
             type="text"
@@ -196,6 +199,7 @@ export default function Contact() {
             helperText={nameStatus}
           />
         </div>
+
         <div className="form-box" id="phone-box">
           <TextField
             type="tel"
@@ -248,6 +252,12 @@ export default function Contact() {
             helperText={emailStatus}
           />
         </div>
+
+        {/* <RowRadioButtonsGroup
+            onRadioChange={onRadioChange}
+            phoneSelected={phoneSelected}
+          /> */}
+
         <div className="form-box">
           <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">
@@ -293,8 +303,8 @@ export default function Contact() {
             Submit
           </button>
         </div>
-        <h4>{formStatus}</h4>
       </div>
+    </div>
     </div>
   );
 }
