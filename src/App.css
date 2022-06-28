@@ -262,10 +262,6 @@ nav a{
 /* Header/Hero */
 video{
   filter: brightness(50%);  
-  height: 100vh;
-  min-height: 100vh;
-  width:100%;
-  min-width: 100%;
 }
 
 .video-overlay {
@@ -1029,9 +1025,12 @@ main{
 }
 
 @media screen and (max-width: 500px ) {
-    .App-header video{
-    min-height:600px;
-    object-fit: initial;
+    video{
+      height: 100vh;
+      min-height: 100vh;
+      width:100%;
+      min-width: 100%;
+      object-fit: initial;
   }
   .mission-statement > div{
     width: 90%;
