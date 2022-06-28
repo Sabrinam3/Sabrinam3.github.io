@@ -148,7 +148,7 @@ export default function ResponsiveAppBar() {
         </Toolbar>
       </Container>
       <a href="tel:5198599458">
-        <p id="dynamic-call">Call Now for a Free Estimate</p>
+        <p id="dynamic-call" className="dynamic-call-hide">Call Now for a Free Estimate</p>
       </a>
     </AppBar>
   );

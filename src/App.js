@@ -1,44 +1,37 @@
 import React from "react";
 
-
 import logo from "./assets/images/logo.png";
-import logosmall from "./assets/images/logo-small.png";
 import heroVideo from "./assets/video/hero.mp4";
-import mission from "./assets/images/mission.jpeg";
 import dollar from "./assets/images/dollar.svg";
 import handshake from "./assets/images/handshake.svg";
 import paintbrush from "./assets/images/paintbrush.svg";
 import invoice from "./assets/images/invoice.svg";
-import arrowright from "./assets/images/arrow-right.svg";
-import interior from "./assets/images/interior.jpeg";
-import exterior from "./assets/images/exterior.jpeg";
-import exterior1 from "./assets/images/exterior1.jpeg";
-import exterior3 from "./assets/images/exterior3.jpeg";
 
+import interiorfeature from "./assets/images/site/interior_feature.jpeg";
+import exteriorfeature from "./assets/images/site/exterior.jpeg";
+import commfeature from "./assets/images/site/commercial_feature.jpeg";
 
-import featureinterior from "./assets/images/interiorxx.jpeg";
-import featureexterior from "./assets/images/exterior-feature.jpeg";
-import comfeature from "./assets/images/commercial-feature.jpeg";
+import interiorbeige from "./assets/images/site/interior_beige.jpeg";
+import interiorblue from "./assets/images/site/interior_blue.jpeg";
+import exteriorhouse from "./assets/images/site/exterior_house.jpeg";
 
-import commercial1 from "./assets/images/commercial1.jpeg";
-import commercial2 from "./assets/images/commercial2.jpeg";
-import commercial3 from "./assets/images/commercial3.jpeg";
+import commercialtools from "./assets/images/site/commercial_tools.jpeg";
+import commercialwall from "./assets/images/site/commercial_wall.jpeg";
+import commercialhouse from "./assets/images/site/commercial_house.jpeg";
 
 import "./App.css";
 
 import Contact from "./components/Contact.js";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
-
-
-
 var myScrollFunc = function() {
   const myID = document.getElementById("dynamic-call");
   var y = window.scrollY;
+
   if (y >= 100) {
-    myID.className = "dynamic-call-show"
+    myID.className = "dynamic-call-show";
   } else {
-    myID.className = "dynamic-call-hide"
+    myID.className = "dynamic-call-hide";
   }
 };
 
@@ -58,17 +51,15 @@ function App() {
               Call Now for a <span className="nav-emphasis">Free</span> Estimate
             </p>
           </a>
-        
         </div>
       </nav>
-      <ResponsiveAppBar/>
+      <ResponsiveAppBar />
       <div className="contact-mobile-bar">
-      <a href="tel:5198599458">
-      <p>
-          Call Now for a <span className="nav-emphasis">Free</span> Estimate
-      </p>
-      </a>
-      
+        <a href="tel:5198599458">
+          <p>
+            Call Now for a <span className="nav-emphasis">Free</span> Estimate
+          </p>
+        </a>
       </div>
 
       <header className="App-header">
@@ -119,79 +110,64 @@ function App() {
               </p>
             </div>
           </div>
+          <button className="button1">Contact Us Now</button>
           {/* Services Preview */}
           <div className="services-preview">
             <div className="services-preview-inner">
               <div className="img-hover-zoom img-hover-zoom--blur">
-                <img src={featureinterior} alt="" />
+                <img src={interiorfeature} alt="" />
               </div>
               <div className="services-preview-inner-text">
-              <h3>Interior Painting</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
-              </p>
+                <h3>Interior Painting</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
+                  varius natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
               </div>
-           
+
               <a href="#interior">
-                <button className="button3">Learn More</button>
+                <button className="button1">Learn More</button>
               </a>
             </div>
             <div className="services-preview-inner">
               <div className="img-hover-zoom img-hover-zoom--blur">
-                <img src={featureexterior} alt="" />
+                <img src={exteriorfeature} alt="" />
               </div>
               <div className="services-preview-inner-text">
-              <h3>Exterior Painting</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
-              </p>
+                <h3>Exterior Painting</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
+                  varius natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
               </div>
               <a href="#exterior">
-                <button className="button3">Learn More</button>
+                <button className="button1">Learn More</button>
               </a>
             </div>
             <div className="services-preview-inner">
               <div className="img-hover-zoom img-hover-zoom--blur">
-                <img src={comfeature} alt="" />
+                <img src={commfeature} alt="" />
               </div>
               <div className="services-preview-inner-text">
-              <h3>Commercial Painting</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.vulputate lectus quis, commodo diam.
-              </p>
+                <h3>Commercial Painting</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
+                  varius natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.vulputate lectus quis, commodo diam.
+                </p>
               </div>
               <a href="#commercial">
-                <button className="button3">Learn More</button>
+                <button className="button1">Learn More</button>
               </a>
             </div>
           </div>
         </section>
-        {/* Estimate Bar */}
 
-        <div className="free-estimate-bar">
-          <div>
-            <h3>
-              ThieLot Painting Delivers the Highest Level of Professionalism and
-              Quality
-            </h3>
-            <h4>
-              We provide our expert opinion at every stage of the project and
-              are always willing to provide a free estimate
-            </h4>
-            <a href="#contact">
-              <button className="button1">Contact Us Now</button>
-            </a>
-          </div>
-        </div>
         <section className="feature" id="difference">
           <h2 className="subheading-2">Why Choose ThieLot Painting?</h2>
           <div className="feature-inner">
@@ -253,10 +229,26 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="services-section"  id="residential">
+
+        {/* Estimate Bar */}
+        <div className="free-estimate-bar">
+          <div>
+            <h3>
+              ThieLot Painting Delivers the Highest Level of Professionalism and
+              Quality
+            </h3>
+            <h4>
+              We provide our expert opinion at every stage of the project and
+              are always willing to provide a free estimate
+            </h4>
+            <a href="#contact">
+              <button className="button1">Get Started Today</button>
+            </a>
+          </div>
+        </div>
+        <section className="services-section" id="residential">
           <div className="services-top-bar">
             <div>
-
               <h2 className="subheading">
                 <span className="nav-emphasis-dark">Residential</span> Painting
                 Services
@@ -274,25 +266,26 @@ function App() {
                 <h4>Residential Painting Services</h4>
                 <button className="button1">Free Quote</button>
               </div>
-              <img src={interior} alt="" />
+              <img src={interiorbeige} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
                 <button className="button1">Free Quote</button>
               </div>
-              <img src={exterior1} alt="" />
+              <img src={exteriorhouse} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
                 <button className="button1">Free Quote</button>
               </div>
-              <img src={exterior} alt="" />
+              <img src={interiorblue} alt="" />
             </div>
           </div>
+          <div className="spacer-link" id="interior"></div>
           {/* Interior Painting */}
-          <div className="services-sub-text">
+          <div className="services-sub-text" >
             <h3>
               <span className="nav-emphasis-dark">Interior</span> Painting
             </h3>
@@ -351,6 +344,7 @@ function App() {
           </div>
 
           {/* Exterior Painting */}
+          <div className="spacer-link" id="exterior"></div>
           <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Exterior</span> Painting
@@ -411,7 +405,6 @@ function App() {
           <div className="commercial-section" id="commercial">
             <div className="services-top-bar">
               <div>
-
                 <h2 className="subheading">
                   <span className="nav-emphasis-dark">Commercial</span> Painting
                   Services
@@ -431,21 +424,21 @@ function App() {
                   <h4>Commercial Painting Services</h4>
                   <button className="button1">Free Quote</button>
                 </div>
-                <img src={commercial1} alt="" />
+                <img src={commercialtools} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
                   <button className="button1">Free Quote</button>
                 </div>
-                <img src={commercial2} alt="" />
+                <img src={commercialwall} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
                   <button className="button1">Free Quote</button>
                 </div>
-                <img src={commercial3} alt="" />
+                <img src={commercialhouse} alt="" />
               </div>
             </div>
             {/* Commercial Painting Services */}
@@ -515,9 +508,7 @@ function App() {
           <Contact />
         </section>
       </main>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   );
 }
