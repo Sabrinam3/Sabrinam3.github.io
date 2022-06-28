@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-import { makeStyles, useTheme } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
 import {
   FormControl,
   TextField,
-  InputLabel,
-  FormHelperText,
-  Box,
   FormLabel,
 } from "@material-ui/core";
 
 import "../App.css";
-import RowRadioButtonsGroup from "./RowRadioButtonsGroup";
 import ToggleSwitch from "./ToggleSwitch";
 import ToggleButtons from "./ToggleButtons";
 
