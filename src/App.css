@@ -263,8 +263,6 @@ nav a{
 video{
   filter: brightness(50%);  
   height:100vh;
-  overflow-x: hidden;
-  object-fit: initial;
 }
 
 .video-overlay {
