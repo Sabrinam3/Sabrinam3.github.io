@@ -262,6 +262,7 @@ nav a{
 /* Header/Hero */
 video{
   filter: brightness(50%);  
+  width: 100%;
 }
 
 .video-overlay {
@@ -801,8 +802,107 @@ main{
   background-color: var(--tp-accent-dark) !important;
 }
 
+/* ==================FOOTER SECTION ================== */
+footer{
+  background-color: var(--tp-dark-blue);
+  padding: 1em 3em;
+}
 
+.to-top{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Playfair Display', serif;
+}
 
+.to-top img{
+  width: 30px;
+  filter: invert(54%) sepia(69%) saturate(337%) hue-rotate(123deg) brightness(95%) contrast(91%);
+  margin-left:10px;
+}
+
+.to-top a{
+  display: flex;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  padding-bottom: 2em;
+  border-bottom: 0.1px solid var(--tp-accent-hover);
+}
+
+.footer-logo{
+  display: inline-flex;
+  margin-bottom: 2em;
+}
+
+.logo-small{
+  width: 50px;
+  margin-right: 0.5em;
+}
+
+footer h3{
+  color: white;
+  border-bottom: 2px solid var(--tp-accent-dark);
+  padding-right: 4em;
+  white-space: nowrap;
+}
+
+footer h4{
+  color: var(--tp-accent-hover);
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1em;
+}
+footer h5{
+  color: var(--tp-light-grey);
+}
+footer p{
+  color: var(--tp-light-grey);
+}
+.backtop{
+  border-bottom: 1px solid white;
+  display: inline;
+  padding-right: 1em;
+}
+footer a{
+  color:var(--tp-light-grey);
+}
+footer ul{
+  padding: 0;
+}
+footer li{
+  list-style: none;
+}
+
+.footer-icon-container{
+  margin-left: 10%;
+}
+
+.footer-icon-grp{
+  display: flex;
+  margin: 5px 0;
+}
+
+.footer-icon-grp img{
+  width: 20px;
+  margin-right: 5%;
+  filter: invert(54%) sepia(69%) saturate(337%) hue-rotate(123deg) brightness(95%) contrast(91%);
+}
+.footer-vcenter{
+  margin-top: 1.5em; 
+}
+.footer-subtext > a {
+  margin-top: 1em;
+  display: block;
+}
+
+footer > p {
+  font-size: 0.8em;
+  margin: 0.5em 0;
+  text-align: center;
+}
 /* Animations */
 @keyframes reveal {
   to{
@@ -863,6 +963,14 @@ main{
     margin-top: 1em;
     width:90%;
   }
+
+  .footer-grid > div:last-child{
+    display: none;
+  }
+
+  .footer-grid{
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
 @media screen and (max-width: 900px ) {
   .App-logo{
@@ -898,6 +1006,19 @@ main{
   .video-overlay div:first-child{
     padding: 0;
     border-left: none;
+  }
+
+  .footer-grid > div:nth-child(2){
+    display: none;
+  }
+
+  .footer-grid{
+    display: flex;
+    justify-content: center;
+  }
+
+  footer{
+    padding:0.5em;
   }
 }
 @media screen and (max-width: 700px ) {
@@ -1025,13 +1146,6 @@ main{
 }
 
 @media screen and (max-width: 500px ) {
-    video{
-      height: 100vh;
-      min-height: 100vh;
-      width:100%;
-      min-width: 100%;
-      object-fit: initial;
-  }
   .mission-statement > div{
     width: 90%;
     padding: 1em;
@@ -1040,6 +1154,10 @@ main{
  
   .mission-inner ~ img{
     width: 100%;
+  }
+
+  .free-estimate-bar{
+   
   }
   .feature-container img{
     margin-right: 0.5em;
@@ -1066,8 +1184,12 @@ main{
     padding: 1em;
   }
   .contact-section{
-    background: var(--tp-dark-blue);
+    /* background: var(--tp-dark-blue); */
     padding: 6em 0;
+  }
+
+  .footer-logo{
+    margin-top: 1.5em;
   }
 }
 @media screen and (max-width:400px ) {

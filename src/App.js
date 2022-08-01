@@ -1,11 +1,16 @@
 import React from "react";
 
 import logo from "./assets/images/logo.png";
+import logosmall from "./assets/images/logo-small.png";
 import heroVideo from "./assets/video/hero.mp4";
 import dollar from "./assets/images/dollar.svg";
 import handshake from "./assets/images/handshake.svg";
 import paintbrush from "./assets/images/paintbrush.svg";
 import invoice from "./assets/images/invoice.svg";
+import phone from "./assets/images/phone.svg";
+import email from "./assets/images/email.svg";
+import pin from "./assets/images/pin.svg";
+import totop from "./assets/images/totop.svg";
 
 import interiorfeature from "./assets/images/site/interior_feature.jpeg";
 import exteriorfeature from "./assets/images/site/exterior.jpeg";
@@ -285,7 +290,7 @@ function App() {
           </div>
           <div className="spacer-link" id="interior"></div>
           {/* Interior Painting */}
-          <div className="services-sub-text" >
+          <div className="services-sub-text">
             <h3>
               <span className="nav-emphasis-dark">Interior</span> Painting
             </h3>
@@ -508,7 +513,76 @@ function App() {
           <Contact />
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div className="to-top">
+       
+          <a href="#mission-section">
+            <h5>Back to Top</h5>
+            <img src={totop} alt="up-arrow" />
+          </a>
+         
+
+        </div>
+        <div className="footer-grid">
+          <div>
+            <div className="footer-logo">
+              <img src={logosmall} alt="" className="logo-small"></img>
+              <h3>
+                ThieLot Painting <span className="nav-emphasis">.</span>
+              </h3>
+            </div>
+            <div className="footer-icon-container">
+              <div>
+                <div className="footer-icon-grp">
+                  <img src={phone} alt="Thielot Painting Phone Number" />
+                  <a href="tel:5198599458">
+                    <p>(519) 859-9458</p>
+                  </a> 
+                </div>
+                <div className="footer-icon-grp">
+                  <img src={email} alt="Thielot Painting Email Address" />
+                  <a href="mailto:doug@thielotpainting.ca">
+                    <p>doug@thielotpainting.ca</p>
+                  </a>
+               
+                </div>
+                <div className="footer-icon-grp">
+                  <img src={pin} alt="Thielot Painting Location" />
+                  <p>London, ON</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer-vcenter">
+            <div className="footer-subtext">
+              <h4>About Us</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+              </p>
+            </div>
+          </div>
+          <div className="footer-vcenter">
+            <div className="footer-subtext">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <a href="#interior">Interior Painting</a>
+                </li>
+                <li>
+                  <a href="#exterior">Exterior Painting</a>
+                </li>
+                <li>
+                  <a href="#commercial">Commercial Painting</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>	&copy;2022 ThieLot Painting</p>
+      </footer>
     </div>
   );
 }
