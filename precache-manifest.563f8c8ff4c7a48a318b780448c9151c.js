@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d7f7c25d8305e74bd119",
-    "url": "/static/css/main.9f725e18.chunk.css"
+    "revision": "becb7ab7f954b324c247",
+    "url": "/static/css/main.0d56e084.chunk.css"
   },
   {
-    "revision": "d7f7c25d8305e74bd119",
-    "url": "/static/js/main.d7f7c25d.chunk.js"
+    "revision": "becb7ab7f954b324c247",
+    "url": "/static/js/main.becb7ab7.chunk.js"
   },
   {
-    "revision": "29cc8311708c13217cfe",
-    "url": "/static/css/1.38ec0057.chunk.css"
+    "revision": "949a9ce9fd1deb30196a",
+    "url": "/static/css/1.905a642c.chunk.css"
   },
   {
-    "revision": "29cc8311708c13217cfe",
-    "url": "/static/js/1.29cc8311.chunk.js"
+    "revision": "949a9ce9fd1deb30196a",
+    "url": "/static/js/1.949a9ce9.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -40,6 +40,10 @@ self.__precacheManifest = [
     "url": "/static/media/logo.416716e7.png"
   },
   {
+    "revision": "a7b3cbf778d1d38e560d21bc45f73293",
+    "url": "/static/media/logo-small.a7b3cbf7.png"
+  },
+  {
     "revision": "c34c93957d40463aa337f8533ccc489c",
     "url": "/static/media/hero.c34c9395.mp4"
   },
@@ -54,6 +58,22 @@ self.__precacheManifest = [
   {
     "revision": "d4b2df018cee2ccee832e10aa469f526",
     "url": "/static/media/invoice.d4b2df01.svg"
+  },
+  {
+    "revision": "d357be03b2e7f35a52179a2fb16e9f23",
+    "url": "/static/media/phone.d357be03.svg"
+  },
+  {
+    "revision": "189e533b476b136356b0d162314108f4",
+    "url": "/static/media/email.189e533b.svg"
+  },
+  {
+    "revision": "a0e4574eb510608fc0f5fbe30ffbd01f",
+    "url": "/static/media/pin.a0e4574e.svg"
+  },
+  {
+    "revision": "0bfc629914550d2c466f10c531230d6c",
+    "url": "/static/media/totop.0bfc6299.svg"
   },
   {
     "revision": "d06152bf72c83ff4a4ba2c64fb0583dc",
@@ -92,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/commercial_house.87691597.jpeg"
   },
   {
-    "revision": "64825bfa3f1c8a9134f0070c776409fc",
+    "revision": "5b386c062e026fc94e361d68da156e1b",
     "url": "/index.html"
   }
 ];
