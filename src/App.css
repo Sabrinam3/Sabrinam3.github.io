@@ -263,8 +263,6 @@ nav a{
 video{
   filter: brightness(50%);  
   width: 100%;
-  height:90vh;
-  object-fit: initial;
 }
 
 .video-overlay {
@@ -277,9 +275,9 @@ video{
   /* box-shadow:  12px 12px 15px #050533,
              -12px -12px 15px #05053d; */
 }
-/* .App-header {
+.App-header {
   position: relative;
-} */
+}
 
 
 
@@ -929,6 +927,10 @@ footer > p {
 @media screen and (max-width: 1500px){
   .form-section{
     width: 40%;
+  }
+  video{
+    height:100vh;
+    object-fit: initial !important;
   }
 }
 @media screen and (max-width: 1300px){

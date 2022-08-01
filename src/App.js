@@ -68,7 +68,7 @@ function App() {
       </div>
 
       <header className="App-header">
-        {/* <div className="video-overlay">
+        <div className="video-overlay">
           <div>
             <h1>
               ThieLot Painting<span>.</span>
@@ -80,7 +80,7 @@ function App() {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
         <video
           src={heroVideo}
           type="video/mp4"
