@@ -273,6 +273,7 @@ video{
 }
 .App-header {
   position: relative;
+  overflow-x:hidden;
 }
 
 
