@@ -139,6 +139,7 @@ export default function Contact() {
         
 
     <div className="form-section">
+    <h3>Submit a Service Inquiry</h3>
       <div id="form-stage1">
         <h5>Step 1 - Tell us About Your Project(optional)</h5>
         <div className="form-box">

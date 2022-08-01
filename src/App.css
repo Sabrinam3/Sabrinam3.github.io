@@ -38,7 +38,7 @@ button{
 .button{
   border: none;
   background-color: var(--tp-accent-blue);
-  padding: 0.3em 1.1em;
+  padding: 0.5em 1.3em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -49,7 +49,7 @@ button{
 .button1{
   border: none;
   background-color: var(--tp-accent-blue);
-  padding: 0.3em 1.3em;
+  padding: 0.5em 1.3em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -61,7 +61,7 @@ button{
 .button1-dark{
   border: none;
   background-color: var(--tp-medium-blue);
-  padding: 0.3em 1.3em;
+  padding: 0.5em 1.3em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -83,7 +83,7 @@ button{
 .button2{
   border: none;
   background-color: var(--tp-dark-blue);
-  padding: 0.5em 1em;
+  padding: 0.5em 1.3em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -707,10 +707,13 @@ main{
 /* ==================CONTACT SECTION ================== */
 
 .contact-section{
-  /* background-color: var(--tp-dark-blue); */
   background: linear-gradient(rgba(13,6,33, 0.85), rgba(14,8,66, 0.85)), url('./assets/images/site/interior_bg.jpeg');
   background-size: cover;
   padding: 6em 3em;
+  min-height:700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .contact-section h3{
   color: var(--tp-light-grey);
@@ -737,12 +740,19 @@ main{
   animation: fade 1s;
 }
 
+.form-section h3{
+  margin-bottom: 1em;
+}
+.form-section h5{
+  text-align: center;
+}
 .form-section{
-  width:20%;
+  width:50%;
   margin: 1em auto;
-  /* background-color: var(--tp-medium-blue); */
   padding: 1em;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #form-status{
   text-align: center;

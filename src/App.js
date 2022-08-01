@@ -507,7 +507,6 @@ function App() {
         </section>
         {/* Contact Section */}
         <section className="contact-section" id="contact">
-          <h3>Submit a Service Inquiry</h3>
           <Contact />
         </section>
       </main>
