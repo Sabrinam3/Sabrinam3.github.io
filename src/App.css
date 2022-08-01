@@ -262,7 +262,7 @@ nav a{
 /* Header/Hero */
 video{
   filter: brightness(50%);  
-  width: 100%;
+  /* width: 100%; */
 }
 
 .video-overlay {
@@ -270,10 +270,6 @@ video{
   border-radius: 25px;
   margin: 2em;
   z-index: 2;
-  /* background-color: rgba(241, 241, 241, 0.8); */
-  /* box-shadow: rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset, rgba(2, 5, 64, 0.5) 0px 18px 36px 18px inset; */
-  /* box-shadow:  12px 12px 15px #050533,
-             -12px -12px 15px #05053d; */
 }
 .App-header {
   position: relative;
@@ -928,10 +924,6 @@ footer > p {
   .form-section{
     width: 40%;
   }
-  video{
-    height:100vh;
-    object-fit: initial !important;
-  }
 }
 @media screen and (max-width: 1300px){
   .mission-inner{
@@ -1010,6 +1002,9 @@ footer > p {
   .video-overlay div:first-child{
     padding: 0;
     border-left: none;
+  }
+  video{
+    height:600px;
   }
 
   .footer-grid > div:nth-child(2){
@@ -1197,5 +1192,7 @@ footer > p {
   }
 }
 @media screen and (max-width:400px ) {
-  
+  footer h3{
+    padding-right: 1em;
+  }
 }
