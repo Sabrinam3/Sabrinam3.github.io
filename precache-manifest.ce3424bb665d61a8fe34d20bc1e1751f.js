@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6dc28d15d240941e4678",
-    "url": "/static/css/main.b1be9038.chunk.css"
+    "revision": "4f60aa00bec92c1a7fb1",
+    "url": "/static/css/main.650f5976.chunk.css"
   },
   {
-    "revision": "6dc28d15d240941e4678",
-    "url": "/static/js/main.6dc28d15.chunk.js"
+    "revision": "4f60aa00bec92c1a7fb1",
+    "url": "/static/js/main.4f60aa00.chunk.js"
   },
   {
     "revision": "949a9ce9fd1deb30196a",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/commercial_house.87691597.jpeg"
   },
   {
-    "revision": "e3f3e76759a823aeb8b67438a2dbf6e5",
+    "revision": "2b18372572673fdba761fb22c4ed278d",
     "url": "/index.html"
   }
 ];
