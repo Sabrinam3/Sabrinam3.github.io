@@ -263,6 +263,8 @@ nav a{
 video{
   filter: brightness(50%);  
   width: 100%;
+  height:90vh;
+  object-fit: initial;
 }
 
 .video-overlay {
@@ -275,9 +277,9 @@ video{
   /* box-shadow:  12px 12px 15px #050533,
              -12px -12px 15px #05053d; */
 }
-.App-header {
+/* .App-header {
   position: relative;
-}
+} */
 
 
 
@@ -1156,9 +1158,6 @@ footer > p {
     width: 100%;
   }
 
-  .free-estimate-bar{
-   
-  }
   .feature-container img{
     margin-right: 0.5em;
   }
@@ -1190,6 +1189,9 @@ footer > p {
 
   .footer-logo{
     margin-top: 1.5em;
+  }
+  footer h3{
+    padding-right: 2em;
   }
 }
 @media screen and (max-width:400px ) {
