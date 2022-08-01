@@ -263,6 +263,8 @@ nav a{
 video{
   filter: brightness(50%);  
   height:100vh;
+  width:100%;
+  object-fit: cover;
 }
 
 .video-overlay {
@@ -926,6 +928,11 @@ footer > p {
     width: 40%;
   }
 }
+@media screen and (max-width: 1400px){
+ video{
+  width:auto;
+ }
+}
 @media screen and (max-width: 1300px){
   .mission-inner{
     padding: 0 2em;
@@ -1072,7 +1079,16 @@ footer > p {
     visibility: visible;
     font-size: 1.6em;
   }
-  
+  .video-overlay{
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+  }
+  .App-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #mission-section{
     padding: 1em;
   }
@@ -1146,7 +1162,6 @@ footer > p {
   .mission-statement > div{
     width: 90%;
     padding: 1em;
-
   }
  
   .mission-inner ~ img{
@@ -1158,21 +1173,12 @@ footer > p {
   }
 
   .App-header h1{
-    font-size: 1.8em;
+    font-size: 2em;
   }
   .App-header p{
     font-size: 1em;
   }
-  .video-overlay{
-    padding: 1em;
-    margin: 0;
-    text-align: center;
-  }
-  .App-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .form-section{
     width: 90%;
     padding: 1em;
