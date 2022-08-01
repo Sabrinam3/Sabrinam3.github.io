@@ -13,11 +13,13 @@ import pin from "./assets/images/pin.svg";
 import totop from "./assets/images/totop.svg";
 
 import interiorfeature from "./assets/images/site/interior_feature.jpeg";
-import exteriorfeature from "./assets/images/site/exterior.jpeg";
+import interiornew from "./assets/images/site/interior_new.jpeg";
+import exteriorfeature from "./assets/images/site/exterior_feature.jpeg";
 import commfeature from "./assets/images/site/commercial_feature.jpeg";
 
 import interiorbeige from "./assets/images/site/interior_beige.jpeg";
 import interiorblue from "./assets/images/site/interior_blue.jpeg";
+import exteriordeck from "./assets/images/site/exterior_deck.jpeg";
 import exteriorhouse from "./assets/images/site/exterior_house.jpeg";
 
 import commercialtools from "./assets/images/site/commercial_tools.jpeg";
@@ -46,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <img src={logo} className="App-logo" alt="ThieLot Painting Logo" />
+        <img src={logo} className="App-logo" alt="Thielot Painting Logo" />
         <div className="nav-tel">
           <a href="tel:5198599458">
             <p>(519) 859-9458</p>
@@ -101,12 +103,10 @@ function App() {
             <div>
               <p>
                 At ThieLot Painting, we take pride in{" "}
-                <span className="nav-emphasis">every project</span>. That is why
+                <span className="nav-emphasis-dark">every project</span>. That is why
                 we bring top quality workmanship and meticulous attention to
                 detail to every job - large or small. We remain dedicated to
-                delivering the{" "}
-                <span className="nav-emphasis">best quality</span> at the most{" "}
-                <span className="nav-emphasis">competitive price</span> by
+                delivering the best quality at the most competitive price by
                 combining current technology with old fashioned values and
                 service. We are a family run business with over{" "}
                 <span className="nav-emphasis">x years </span>of industry
@@ -115,12 +115,11 @@ function App() {
               </p>
             </div>
           </div>
-          <button className="button1">Contact Us Now</button>
           {/* Services Preview */}
           <div className="services-preview">
             <div className="services-preview-inner">
               <div className="img-hover-zoom img-hover-zoom--blur">
-                <img src={interiorfeature} alt="" />
+                <img src={interiorbeige} alt="" />
               </div>
               <div className="services-preview-inner-text">
                 <h3>Interior Painting</h3>
@@ -138,7 +137,7 @@ function App() {
             </div>
             <div className="services-preview-inner">
               <div className="img-hover-zoom img-hover-zoom--blur">
-                <img src={exteriorfeature} alt="" />
+                <img src={exteriordeck} alt="" />
               </div>
               <div className="services-preview-inner-text">
                 <h3>Exterior Painting</h3>
@@ -239,12 +238,11 @@ function App() {
         <div className="free-estimate-bar">
           <div>
             <h3>
-              ThieLot Painting Delivers the Highest Level of Professionalism and
-              Quality
+              ThieLot Painting Brings the Highest Standard of <span className="free-estimate-emphasis">Professionalism</span> and
+              <span className="free-estimate-emphasis"> Quality</span>
             </h3>
             <h4>
-              We provide our expert opinion at every stage of the project and
-              are always willing to provide a free estimate
+             what should go here?
             </h4>
             <a href="#contact">
               <button className="button1">Get Started Today</button>
@@ -269,23 +267,23 @@ function App() {
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <button className="button1">Free Quote</button>
+                <a href="#contact"><button className="button1">Free Quote</button></a>
               </div>
-              <img src={interiorbeige} alt="" />
+              <img src={exteriorfeature} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <button className="button1">Free Quote</button>
+                <a href="#contact"><button className="button1">Free Quote</button></a>
               </div>
               <img src={exteriorhouse} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <button className="button1">Free Quote</button>
+                <a href="#contact"><button className="button1">Free Quote</button></a>
               </div>
-              <img src={interiorblue} alt="" />
+              <img src={interiornew} alt="" />
             </div>
           </div>
           <div className="spacer-link" id="interior"></div>
@@ -344,7 +342,7 @@ function App() {
             </div>
             <h5>Have something else in mind? Ask us about it!</h5>
             <a href="#contact">
-              <button className="button1">Interior Painting Quote</button>
+              <button className="button1-dark">Get a Free Estimate</button>
             </a>
           </div>
 
@@ -404,7 +402,7 @@ function App() {
             </div>
             <h5>Have something else in mind? Ask us about it!</h5>
             <a href="#contact">
-              <button className="button1">Exterior Painting Quote</button>
+            <button className="button1-dark">Get a Free Estimate</button>
             </a>
           </div>
           <div className="commercial-section" id="commercial">
@@ -427,21 +425,21 @@ function App() {
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <button className="button1">Free Quote</button>
+                  <a href="#contact"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialtools} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <button className="button1">Free Quote</button>
+                  <a href="#contact"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialwall} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <button className="button1">Free Quote</button>
+                  <a href="#contact"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialhouse} alt="" />
               </div>
@@ -502,7 +500,7 @@ function App() {
               </div>
               <h5>Have something else in mind? Ask us about it!</h5>
               <a href="#contact">
-                <button className="button1">Commercial Painting Quote</button>
+                <button className="button1-dark">Get a Free Estimate</button>
               </a>
             </div>
           </div>
@@ -541,8 +539,8 @@ function App() {
                 </div>
                 <div className="footer-icon-grp">
                   <img src={email} alt="Thielot Painting Email Address" />
-                  <a href="mailto:doug@thielotpainting.ca">
-                    <p>doug@thielotpainting.ca</p>
+                  <a href="mailto:thielotpainting@gmail.com">
+                    <p>thielotpainting@gmail.com</p>
                   </a>
                
                 </div>

@@ -95,20 +95,23 @@ export default function Contact() {
   const submitContactForm = () => {
     //validate the form
     if (!validateForm()) {
-      setFormStatus("Oops! Please fill in the required fields and try again");
+      setFormStatus("Please fill in the required information and submit again");
+      document.getElementById("form-status").style.color = "#f44336";
     } else {
       //Send the email
       var templateParams = {
         from_name: name,
-        reply_to: phoneSelected ? phone : email,
+        phone_num: phone,
+        email_adr: email,
         message_html: message,
         job_type: jobType,
         job_detail: jobDetail,
       };
 
+    
       emailjs
         .send(
-          "gmail",
+          "service_blr7ltw",
           "ThielotPainting",
           templateParams,
           "user_SdhrQXfrPZb4mn1plcyk9"
@@ -120,6 +123,7 @@ export default function Contact() {
             setPhone("");
             setEmail("");
             setMessage("");
+            document.getElementById("form-status").style.color = "white";
           },
           (error) => {
             setFormStatus(
@@ -132,7 +136,7 @@ export default function Contact() {
 
   return (
     <div>
-            <h4 id="form-status">{formStatus}</h4>
+        
 
     <div className="form-section">
       <div id="form-stage1">
@@ -300,6 +304,7 @@ export default function Contact() {
           </button>
         </div>
       </div>
+      <h4 id="form-status">{formStatus}</h4>
     </div>
     </div>
   );

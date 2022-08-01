@@ -15,6 +15,7 @@ body{
 :root {
   --tp-dark-blue: rgb(13, 6, 33);
   --tp-medium-blue: rgb(14, 8, 66);
+  --tp-light-blue:rgb(25, 17, 101);
   --tp-accent-blue: #3fab9e;
   --tp-accent-hover: #65bcb1;
   --tp-accent-dark: #18937C;
@@ -48,7 +49,19 @@ button{
 .button1{
   border: none;
   background-color: var(--tp-accent-blue);
-  padding: 0.5em 1.5em;
+  padding: 0.3em 1.3em;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: bolder;
+  color: #f0f0f0;
+  /* box-shadow: 0 10px 10px -5px var(--blue-shadow-to); */
+  transition: background-color 1s ease;
+}
+
+.button1-dark{
+  border: none;
+  background-color: var(--tp-medium-blue);
+  padding: 0.3em 1.3em;
   border-radius: 5px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bolder;
@@ -59,6 +72,11 @@ button{
 
 .button1:hover{
   background-color: var(--tp-accent-dark);
+
+}
+
+.button1-dark:hover{
+  background-color: var(--tp-light-blue);
 
 }
 
@@ -194,7 +212,7 @@ nav a{
   margin:0.3em;
   text-align: center;
 }
-.nav-tel p:nth-of-type(1){
+.nav-tel a:first-child > p{
   font-size:1.1em;
   animation: pulse 3s infinite;
   text-align: center;
@@ -366,12 +384,11 @@ main{
 /* ==================MISSION BANNER CONTACT SECTION ================== */
 
 .free-estimate-bar{
-  background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.2)), url('./assets/images/site/paintbanner.jpeg');
+  background:  linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url('./assets/images/site/interior_beige.jpeg');
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   padding: 1em;
-
-  min-height: 400px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -379,21 +396,26 @@ main{
 }
 
 .free-estimate-bar > div{
-  width: 70%;
   padding: 2em;
 }
 .free-estimate-bar h3{
-  color: white;
-  font-size: 1.4em;
+  font-size: 2em;
   text-align: center;
-  text-shadow: 2px 2px 5px var(--tp-dark-blue);
-  
+  font-family: 'Source Sans Pro', serif;
+  color: white;
+  text-shadow: 3px 4px 7px rgba(0,0,0,0.8);
 }
+
+.free-estimate-emphasis{
+  color: var(--tp-accent-blue);
+}
+
 .free-estimate-bar h4{
   color: var(--tp-light-grey);
   font-size: 0.9em;
   margin: 3em 0;
   font-family: 'Playfair Display', serif;
+  text-shadow: 2px 3px 6px rgba(0,0,0,0.8);
 }
 .free-estimate-bar > div{
   margin-right: 0.5em;
@@ -604,8 +626,10 @@ main{
   flex-direction: column;
 }
 .services-img-overlay button{
-  margin: 1em 2em;
   visibility: hidden;
+}
+.services-img-overlay a{
+  margin: 1em auto;
 }
 .services-img:hover .services-img-overlay h4{
   animation: fadeInUp 1.5s;
@@ -684,7 +708,7 @@ main{
 
 .contact-section{
   /* background-color: var(--tp-dark-blue); */
-  background: linear-gradient(rgba(13,6,33, 0.95), rgba(14,8,66, 0.95)), url('./assets/images/site/interior_bg.jpeg');
+  background: linear-gradient(rgba(13,6,33, 0.85), rgba(14,8,66, 0.85)), url('./assets/images/site/interior_bg.jpeg');
   background-size: cover;
   padding: 6em 3em;
 }
@@ -722,9 +746,8 @@ main{
 }
 #form-status{
   text-align: center;
-  color: var(--tp-accent-hover);
-  font-style: italic;
-  font-size:0.6em;
+  color: white;
+  font-size:0.7em;
   margin: 0.5em 0;
 }
 .form-box{
@@ -859,6 +882,7 @@ footer h5{
 }
 footer p{
   color: var(--tp-light-grey);
+  font-size: 1rem;
 }
 .backtop{
   border-bottom: 1px solid white;
@@ -867,6 +891,7 @@ footer p{
 }
 footer a{
   color:var(--tp-light-grey);
+  font-size: 1rem;
 }
 footer ul{
   padding: 0;
@@ -889,9 +914,7 @@ footer li{
   margin-right: 5%;
   filter: invert(54%) sepia(69%) saturate(337%) hue-rotate(123deg) brightness(95%) contrast(91%);
 }
-.footer-vcenter{
-  margin-top: 1.5em; 
-}
+
 .footer-subtext > a {
   margin-top: 1em;
   display: block;
@@ -1094,8 +1117,8 @@ footer > p {
   }
 
   .free-estimate-bar{
-    background:  linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url('./assets/images/site/paintbanner.jpeg');
-    background-position: right;
+    background:  linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url('./assets/images/site/interior_beige.jpeg');
+    background-position: center;
     background-size: cover;
   }
   .free-estimate-bar > div{
@@ -1196,6 +1219,13 @@ footer > p {
   }
 }
 @media screen and (max-width:400px ) {
+  #mission-section{
+    padding: 0.5em;
+  }
+  .mission-statement > div{
+    text-align: center;
+    padding: 0.5em;
+  }
   footer h3{
     padding-right: 1em;
   }
