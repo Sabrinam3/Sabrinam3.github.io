@@ -75,7 +75,7 @@ function App() {
             <h1>
               ThieLot Painting<span>.</span>
             </h1>
-            <p>Premiere Residential and Commercial Painting Services</p>
+            <p>Professional Residential and Commercial Painting Services</p>
             <div className="contact-desktop-span">
               <a href="#contact">
                 <button className="button1">Get a Free Estimate</button>
@@ -96,23 +96,20 @@ function App() {
         <section id="mission-section">
           <h2 className="subheading">Our Mission</h2>
           <h3 className="slogan">
-            Doing the Project Properly the{" "}
-            <span className="nav-emphasis-dark">First Time</span>
+            Doing the Project Properly the <span className="nav-emphasis-dark">First Time</span>
           </h3>
           <div className="mission-statement">
             <div>
               <p>
-                At ThieLot Painting, we take pride in{" "}
-                <span className="nav-emphasis-dark">every project</span>. That is why
+                At ThieLot Painting, we take pride in <b>every project</b>. That is why
                 we bring top quality workmanship and meticulous attention to
                 detail to every job - large or small. We remain dedicated to
                 delivering the best quality at the most competitive price by
                 combining current technology with old fashioned values and
-                service. We are a family run business with over{" "}
-                <span className="nav-emphasis">x years </span>of industry
-                experience and knowledge. Let us help make your home or business
-                look its best!{" "}
+                service. We are a family run business with extensive industry
+                experience and knowledge.
               </p>
+              <p>ThieLot Painting provides a variety of residential and commercial painting services to <b>London, Ontario</b> and the surrounding area.</p>
             </div>
           </div>
           {/* Services Preview */}
@@ -124,10 +121,7 @@ function App() {
               <div className="services-preview-inner-text">
                 <h3>Interior Painting</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
-                  varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
+                  Whether you need to repaint your entire home, refresh a couple of rooms, or create a stunning accent wall - our reliable interior painting services will help you create the perfect space to call home
                 </p>
               </div>
 
@@ -142,10 +136,7 @@ function App() {
               <div className="services-preview-inner-text">
                 <h3>Exterior Painting</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
-                  varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
+                  The outside of your home should look as great as the inside. Enhance your curb appeal and watch our custom exterior painting services create the vision you have for your home
                 </p>
               </div>
               <a href="#exterior">
@@ -159,10 +150,7 @@ function App() {
               <div className="services-preview-inner-text">
                 <h3>Commercial Painting</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  ut ante lobortis, vulputate lectus quis, commodo diam. Orci
-                  varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.vulputate lectus quis, commodo diam.
+                A fresh coat of paint can create a welcoming environment for your customers. We have the industry experience and product knowledge to handle a variety of commercial painting projects
                 </p>
               </div>
               <a href="#commercial">
@@ -178,43 +166,19 @@ function App() {
             <div>
               <div className="feature-container">
                 <img src={invoice} alt="" />
-                <h3>Free Estimates</h3>
+                <h3>No Cost, Zero Obligation Estimates</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-                et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-                dictum leo.
+               ThieLot Painting understands the importance of finding the right team of painters to bring your vision for your home or business to life. We are always happy to discuss the details of your project including product choices and cost estimates with zero obligation. Call us today and we will be happy to discuss the value we can bring to your project.
               </p>
             </div>
             <div>
               <div className="feature-container">
                 <img src={handshake} alt="" />
-                <h3>Superior Customer Service</h3>
+                <h3>Friendly Customer Service</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-                et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-                dictum leo.
-              </p>
-            </div>
-            <div>
-              <div className="feature-container">
-                <img src={dollar} alt="" />
-                <h3>Competitive Pricing</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-                et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-                dictum leo.
+                ThieLot Painting's mission is to combine unsurpassed customer service with top-quality workmanship. We are a local, family-owned and operated business and we bring these values to the job from start to finish. We go above and beyond to ensure you are satisfied with the quality of our work and we are pleased to offer a satisfaction guarantee on all of our services.
               </p>
             </div>
             <div>
@@ -223,14 +187,19 @@ function App() {
                 <h3>Top Quality Workmanship</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-                et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-                dictum leo.
+                Our small team of professional painters have both expert product knowledge and extensive industry experience. By tailoring the best products and tools for each project, we ensure a top quality result each and every time. From start to finish, we provide trustworthy and efficient service that you can count on.
               </p>
             </div>
+            <div>
+              <div className="feature-container">
+                <img src={dollar} alt="" />
+                <h3>Competitive Pricing</h3>
+              </div>
+              <p>
+                ThieLot Painting offers prices that are extremely competitive with other painting companies in the area. We are happy to discuss product options to ensure the best possible result while staying within your budget. To find out more, request a free quote using the contact form below or call us today.
+              </p>
+            </div>
+            
           </div>
         </section>
 
@@ -238,11 +207,11 @@ function App() {
         <div className="free-estimate-bar">
           <div>
             <h3>
-              ThieLot Painting Brings the Highest Standard of <span className="free-estimate-emphasis">Professionalism</span> and
+              ThieLot Painting Offers the Highest Standard of <span className="free-estimate-emphasis">Professionalism</span> and
               <span className="free-estimate-emphasis"> Quality</span>
             </h3>
             <h4>
-             what should go here?
+              Doing the project properly the first time, every time.
             </h4>
             <a href="#contact">
               <button className="button1">Get Started Today</button>
@@ -259,9 +228,7 @@ function App() {
             </div>
           </div>
           <p>
-            ThieLot Paining provides{" "}
-            <span className="nav-emphasis-dark">top-quality </span>residential
-            painting services in London, Ontario and surrounding area{" "}
+            ThieLot Painting helps your home look its best - both inside and out!
           </p>
           <div className="services-overlay">
             <div className="services-img">
@@ -293,27 +260,28 @@ function App() {
               <span className="nav-emphasis-dark">Interior</span> Painting
             </h3>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-              ante lobortis, vulputate lectus quis, commodo diam.
+              ThieLot Painting provides custom painting services from interior or accent walls, to trims, and everything in between.
             </h5>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-              ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-              et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-              dictum leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.
+              Your home should be a place where you can unwind after a long day, a place where you can make memories for years to come and a place that inspires you. We understand that a fresh coat of paint can help make a house feel like home. Our interior painting services deliver a professional and seamless experience from start to finish. Unsure what color to choose? We provide color consultation to help you choose a color that will complement your space.
             </p>
             <h4>
               Interior Painting{" "}
               <span className="nav-emphasis-dark">Services</span> Include:
             </h4>
             <div className="services-list-container">
+            <div className="services-list-item">
+                <img src={paintbrush} alt="" />
+                <p>Colour Consultation</p>
+              </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Kitchens</p>
+              </div>
+              <div className="services-list-item">
+                <img src={paintbrush} alt="" />
+                <p>Bathrooms</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
@@ -321,23 +289,15 @@ function App() {
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Accent Walls</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Trims</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
-              </div>
-              <div className="services-list-item">
-                <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
-              </div>
-              <div className="services-list-item">
-                <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Cabinet Painting</p>
               </div>
             </div>
             <h5>Have something else in mind? Ask us about it!</h5>
@@ -353,18 +313,11 @@ function App() {
               <span className="nav-emphasis-dark">Exterior</span> Painting
             </h3>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-              ante lobortis, vulputate lectus quis, commodo diam.
+              ThieLot Painting provides detail-oriented exterior painting services that can enhance the curb appeal of your home. 
             </h5>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-              ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-              et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-              dictum leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Duis ut ante lobortis, vulputate lectus quis, commodo diam.
+              When it comes to exterior painting, we understand the importance of choosing quality products that can withstand the elements. We apply our expert product knowledge and meticulous attention to detail to paint your deck, sidings, doors, and other surfaces outside of your home
             </p>
             <h4>
               Exterior Painting{" "}
@@ -373,19 +326,19 @@ function App() {
             <div className="services-list-container">
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Deck Painting</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Sidings</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Doors</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Garages</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
@@ -415,10 +368,7 @@ function App() {
               </div>
             </div>
             <p>
-              ThieLot Paining provides{" "}
-              <span className="nav-emphasis-dark">top-quality </span>commercial
-              painting services to businesses in London, Ontario and surrounding
-              area{" "}
+              ThieLot Paining can help you create a warm and welcoming environment for your business or commercial property!
             </p>
 
             <div className="services-overlay">
@@ -450,52 +400,36 @@ function App() {
                 <span className="nav-emphasis-dark">Commercial</span> Painting
               </h3>
               <h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam.
+                ThieLot Painting has the product knowledge and industry experience to handle a variety of commercial painting projects. Our meticulous attention to detail and friendly service will provide an efficient and worry-free experience.
               </h5>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pellentesque eget lorem vestibulum, faucibus odio
-                et, maximus orci. Curabitur nec tellus feugiat, semper ex vel,
-                dictum leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Duis ut ante lobortis, vulputate lectus quis, commodo
-                diam.
+               No matter the type of business you own and operate, our commercial painting services can help create a welcoming environment for your customers or clients. We will work efficiently to minimize disruption to your business, while providing the reliable service and high quality of work that ThieLot Painting is known for.
               </p>
               <h4>
                 Commercial Painting{" "}
                 <span className="nav-emphasis-dark">Services</span> Include:
               </h4>
               <div className="services-list-container">
-                <div className="services-list-item">
+              <div className="services-list-item">
                   <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
+                  <p>Interior and Exterior Painting</p>
                 </div>
                 <div className="services-list-item">
                   <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
+                  <p>Office Spaces</p>
                 </div>
                 <div className="services-list-item">
                   <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
+                  <p>Schools and Universities</p>
                 </div>
                 <div className="services-list-item">
                   <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
+                  <p>Medical Facilities</p>
                 </div>
                 <div className="services-list-item">
                   <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
-                </div>
-                <div className="services-list-item">
-                  <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
-                </div>
-                <div className="services-list-item">
-                  <img src={paintbrush} alt="" />
-                  <p>Interior Wall Painting</p>
+                  <p>Restaurants and Hospitality</p>
                 </div>
               </div>
               <h5>Have something else in mind? Ask us about it!</h5>
@@ -554,10 +488,7 @@ function App() {
             <div className="footer-subtext">
               <h4>About Us</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-                ante lobortis, vulputate lectus quis, commodo diam. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
+                ThieLot Painting is proud to offer professional residential and commercial painting services to London, Ontario and surrounding area. We are a local, family operated business and combine industry standard technology with old fashioned values and friendly customer service.
               </p>
             </div>
           </div>

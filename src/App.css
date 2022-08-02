@@ -355,7 +355,6 @@ main{
 }
 .slogan{
   font-size: 1em;
-  font-style: italic;
   color: var(--tp-medium-blue);
   font-family: 'Playfair Display', serif;
 }
@@ -380,6 +379,11 @@ main{
 #mission-section > h2{
   padding-top: 2em;
 }
+
+#mission-section p {
+  margin: 0.5em 0;
+}
+
 
 /* ==================MISSION BANNER CONTACT SECTION ================== */
 
@@ -412,7 +416,7 @@ main{
 
 .free-estimate-bar h4{
   color: var(--tp-light-grey);
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 3em 0;
   font-family: 'Playfair Display', serif;
   text-shadow: 2px 3px 6px rgba(0,0,0,0.8);
@@ -541,7 +545,7 @@ main{
   flex-direction: column;
 }
 .services-top-bar > div{
-  margin: 3em 0 2em 0;
+  margin: 2em 0;
 }
 .services-top-bar div:first-child{
   display: flex;
@@ -903,6 +907,7 @@ footer a{
   color:var(--tp-light-grey);
   font-size: 1rem;
 }
+
 footer ul{
   padding: 0;
 }
@@ -934,6 +939,10 @@ footer > p {
   font-size: 0.8em;
   margin: 0.5em 0;
   text-align: center;
+}
+
+.footer-vcenter a{
+  font-weight: bolder;
 }
 /* Animations */
 @keyframes reveal {
