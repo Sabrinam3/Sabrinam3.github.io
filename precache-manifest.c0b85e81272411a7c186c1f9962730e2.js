@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d5691c878cf164a5b389",
-    "url": "/static/css/main.8623ba5f.chunk.css"
+    "revision": "68893bd96789853a6c98",
+    "url": "/static/css/main.5b301ef9.chunk.css"
   },
   {
-    "revision": "d5691c878cf164a5b389",
-    "url": "/static/js/main.d5691c87.chunk.js"
+    "revision": "68893bd96789853a6c98",
+    "url": "/static/js/main.68893bd9.chunk.js"
   },
   {
-    "revision": "69c90a5574efa5980fed",
-    "url": "/static/css/1.4e4b00b7.chunk.css"
+    "revision": "485517797e45b2104930",
+    "url": "/static/css/1.849f85f4.chunk.css"
   },
   {
-    "revision": "69c90a5574efa5980fed",
-    "url": "/static/js/1.69c90a55.chunk.js"
+    "revision": "485517797e45b2104930",
+    "url": "/static/js/1.48551779.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -24,8 +24,20 @@ self.__precacheManifest = [
     "url": "/static/media/paintbrush.54049a5f.svg"
   },
   {
+    "revision": "a7b3cbf778d1d38e560d21bc45f73293",
+    "url": "/static/media/logo-small.a7b3cbf7.png"
+  },
+  {
+    "revision": "9936944ee2662f79454d56db71219675",
+    "url": "/static/media/prep.9936944e.jpeg"
+  },
+  {
     "revision": "597047bb2f700daec0e388a6ffd1c4a7",
     "url": "/static/media/interior_beige.597047bb.jpeg"
+  },
+  {
+    "revision": "28874d5286cda1bbc77154ad8430fc80",
+    "url": "/static/media/white-bg.28874d52.jpeg"
   },
   {
     "revision": "bfd06636edb1aa43a8944255aaef4d4e",
@@ -38,10 +50,6 @@ self.__precacheManifest = [
   {
     "revision": "416716e77410701bf393a3ed3a188420",
     "url": "/static/media/logo.416716e7.png"
-  },
-  {
-    "revision": "a7b3cbf778d1d38e560d21bc45f73293",
-    "url": "/static/media/logo-small.a7b3cbf7.png"
   },
   {
     "revision": "c34c93957d40463aa337f8533ccc489c",
@@ -108,6 +116,18 @@ self.__precacheManifest = [
     "url": "/static/media/commercial_house.87691597.jpeg"
   },
   {
+    "revision": "c34cfa332a00fad43cd93128335c234d",
+    "url": "/static/media/estimate.c34cfa33.jpeg"
+  },
+  {
+    "revision": "16279ee99acc989977585611bbf6b847",
+    "url": "/static/media/painting.16279ee9.jpeg"
+  },
+  {
+    "revision": "47169345cc41f2ba31810e64639c2344",
+    "url": "/static/media/collage.47169345.png"
+  },
+  {
     "revision": "d06152bf72c83ff4a4ba2c64fb0583dc",
     "url": "/static/media/interior_feature.d06152bf.jpeg"
   },
@@ -116,7 +136,7 @@ self.__precacheManifest = [
     "url": "/static/media/interior_blue.b201cfe9.jpeg"
   },
   {
-    "revision": "007007f7c37f164d11d3b756faeebf01",
+    "revision": "0c0cf57b94f296c66751a2f471f3480b",
     "url": "/index.html"
   }
 ];
