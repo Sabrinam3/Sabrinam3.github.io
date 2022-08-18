@@ -26,6 +26,13 @@ import commercialtools from "./assets/images/site/commercial_tools.jpeg";
 import commercialwall from "./assets/images/site/commercial_wall.jpeg";
 import commercialhouse from "./assets/images/site/commercial_house.jpeg";
 
+import estimate from "./assets/images/site/estimate.jpeg";
+import prep from "./assets/images/site/prep.jpeg";
+import painting from "./assets/images/site/painting.jpeg";
+
+
+import collage from "./assets/images/site/collage.png";
+
 import "./App.css";
 
 import Contact from "./components/Contact.js";
@@ -436,6 +443,73 @@ function App() {
               <a href="#contact">
                 <button className="button1-dark">Get a Free Estimate</button>
               </a>
+            </div>
+          </div>
+        </section>
+        {/* Process Intro Section */}
+        <section id="process-intro">
+          <div className="process-intro-text">
+          <img src={logosmall} alt=""/>
+              <h2>Our Painting Process </h2>
+              <p>Our company values are evident in our painting process. From estimate to cleanup, ThieLot Painting prioritizes the needs of our customers.</p>
+              <h4>Want to Hear More?</h4>
+              <a href="tel:5198599458">
+                <button className="button1-dark">Call Us Now</button>
+              </a>
+          </div>
+          <div>
+          <img src={collage} alt=""/>
+          </div>
+          
+        </section>
+        {/* Process Section 1*/}
+        <section className="process process1">
+          <div className="process-sub">
+            <div className="process-sub-img">
+              <img src={estimate} alt=""/>
+            </div>
+            <div>
+              <h3>Service Estimate</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section 2*/}
+        <section className="process process2">
+          <div className="process-sub2">
+            <div>
+              <h3>Preparing to Paint</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+            </div>
+            <div className="process-sub-img">
+              <img src={prep} alt=""/>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section 3*/}
+        <section className="process process1">
+          <div className="process-sub">
+            <div className="process-sub-img">
+              <img src={painting} alt=""/>
+            </div>
+            <div>
+              <h3>Painting</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+            </div>
+          </div>
+        </section>
+
+         {/* Process Section 4*/}
+         <section className="process process2">
+          <div className="process-sub2">
+            <div>
+              <h3>Cleaning Up</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+            </div>
+            <div className="process-sub-img">
+              <img src={prep} alt=""/>
             </div>
           </div>
         </section>
