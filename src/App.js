@@ -514,9 +514,9 @@ function App() {
           </div>
         </section>
         {/* Contact Section */}
-        <section className="contact-section" id="contact">
+         <section className="contact-section" id="contact">
           <Contact />
-        </section>
+        </section> 
       </main>
       <footer>
         <div className="to-top">

@@ -87,12 +87,12 @@ export default function ResponsiveAppBar() {
               </MenuItem>
 
               {/* Services */}
-              <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
+              <MenuItem key={"Residential"} onClick={handleCloseNavMenu}>
                 <a href={"#residential"}>
                   <Typography textAlign="center">RESIDENTIAL PAINTING</Typography>
                 </a>
               </MenuItem>
-              <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
+              <MenuItem key={"Commercial"} onClick={handleCloseNavMenu}>
                 <a href={"#commercial"}>
                   <Typography textAlign="center">COMMERCIAL PAINTING</Typography>
                 </a>

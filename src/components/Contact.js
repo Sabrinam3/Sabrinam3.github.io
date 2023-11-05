@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/styles";
 import {
   FormControl,
   TextField,
   FormLabel,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import "../App.css";
 import ToggleSwitch from "./ToggleSwitch";
@@ -12,26 +11,10 @@ import ToggleButtons from "./ToggleButtons";
 
 import emailjs from "@emailjs/browser";
 
-const useStyles = makeStyles((theme) => ({
-  notchedOutline: {
-    borderWidth: "1px",
-    borderColor: "#65bcb1 !important",
-    color: "white !important",
-  },
-  label: {
-    color: "white !important",
-    fontSize: "0.7em !important",
-  },
-  input: {
-    color: "white !important",
-  },
-}));
-
 const paintOptions1 = ["Residential", "Commercial"];
 const paintOptions2 = ["Interior", "Exterior", "Both"];
 
 export default function Contact() {
-  const classes = useStyles();
   const [name, setName] = useState("");
   const [phoneSelected, setPhoneSelected] = useState(true);
   const [jobType, setJobType] = useState("unspecified");
@@ -177,21 +160,11 @@ export default function Contact() {
         />
         <div className="form-box">
           <TextField
+            sx={{ input: { color: 'white' } }}
             type="text"
             value={name}
             variant="outlined"
             size="small"
-            InputProps={{
-              classes: {
-                notchedOutline: classes.notchedOutline,
-                input: classes.input,
-              },
-            }}
-            InputLabelProps={{
-              classes: {
-                root: classes.label,
-              },
-            }}
             name="name"
             onChange={(e) => setName(e.target.value)}
             label="Your Name"
@@ -204,23 +177,13 @@ export default function Contact() {
 
         <div className="form-box" id="phone-box">
           <TextField
+            sx={{ input: { color: 'white' } }}
             type="tel"
             value={phone}
             variant="outlined"
             size="small"
             fullWidth
             required
-            InputProps={{
-              classes: {
-                notchedOutline: classes.notchedOutline,
-                input: classes.input,
-              },
-            }}
-            InputLabelProps={{
-              classes: {
-                root: classes.label,
-              },
-            }}
             name="phone"
             onChange={(e) => setPhone(e.target.value)}
             label="Phone Number"
@@ -230,23 +193,13 @@ export default function Contact() {
         </div>
         <div className="form-box" id="email-box">
           <TextField
+          sx={{ input: { color: 'white' } }}
             type="email"
             value={email}
             variant="outlined"
             size="small"
             fullWidth
             required
-            InputProps={{
-              classes: {
-                notchedOutline: classes.notchedOutline,
-                input: classes.input,
-              },
-            }}
-            InputLabelProps={{
-              classes: {
-                root: classes.label,
-              },
-            }}
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             label="Email Address"
@@ -255,33 +208,19 @@ export default function Contact() {
           />
         </div>
 
-        {/* <RowRadioButtonsGroup
-            onRadioChange={onRadioChange}
-            phoneSelected={phoneSelected}
-          /> */}
-
         <div className="form-box">
           <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">
               Tell Us More About Your Project (optional)
             </FormLabel>
             <TextField
+            inputProps={{ style: { color: "white" } }}
               type="text"
               value={message}
               variant="outlined"
               fullWidth
               multiline
-              InputProps={{
-                classes: {
-                  notchedOutline: classes.notchedOutline,
-                  input: classes.input,
-                },
-              }}
-              InputLabelProps={{
-                classes: {
-                  root: classes.label,
-                },
-              }}
+              minRows={4}
               name="message"
               onInput={(e) => setMessage(e.target.value)}
               error={messageStatus !== ""}
