@@ -84,7 +84,7 @@ function App() {
             </h1>
             <p>Professional Residential and Commercial Painting Services</p>
             <div className="contact-desktop-span">
-              <a href="#contact">
+              <a href="#process-intro">
                 <button className="button1">Get a Free Estimate</button>
               </a>
             </div>
@@ -211,7 +211,7 @@ function App() {
         </section>
 
         {/* Estimate Bar */}
-        <div className="free-estimate-bar">
+        {/* <div className="free-estimate-bar">
           <div>
             <h3>
               ThieLot Painting Offers the Highest Standard of <span className="free-estimate-emphasis">Professionalism</span> and
@@ -224,7 +224,7 @@ function App() {
               <button className="button1">Get Started Today</button>
             </a>
           </div>
-        </div>
+        </div> */}
         <section className="services-section" id="residential">
           <div className="services-top-bar">
             <div>
@@ -241,21 +241,21 @@ function App() {
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <a href="#contact"><button className="button1">Free Quote</button></a>
+                <a href="#process-intro"><button className="button1">Free Quote</button></a>
               </div>
               <img src={exteriorfeature} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <a href="#contact"><button className="button1">Free Quote</button></a>
+                <a href="#process-intro"><button className="button1">Free Quote</button></a>
               </div>
               <img src={exteriorhouse} alt="" />
             </div>
             <div className="services-img">
               <div className="services-img-overlay">
                 <h4>Residential Painting Services</h4>
-                <a href="#contact"><button className="button1">Free Quote</button></a>
+                <a href="#process-intro"><button className="button1">Free Quote</button></a>
               </div>
               <img src={interiornew} alt="" />
             </div>
@@ -284,7 +284,7 @@ function App() {
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Kitchens</p>
+                <p>Ceilings</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
@@ -300,15 +300,23 @@ function App() {
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
+                <p>Kitchens</p>
+              </div>
+              <div className="services-list-item">
+                <img src={paintbrush} alt="" />
                 <p>Trims</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
                 <p>Cabinet Painting</p>
               </div>
+              <div className="services-list-item">
+                <img src={paintbrush} alt="" />
+                <p>Additional Services as Discussed</p>
+              </div>
             </div>
             <h5>Have something else in mind? Ask us about it!</h5>
-            <a href="#contact">
+            <a href="#process-intro">
               <button className="button1-dark">Get a Free Estimate</button>
             </a>
           </div>
@@ -349,19 +357,15 @@ function App() {
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Fences</p>
               </div>
               <div className="services-list-item">
                 <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
-              </div>
-              <div className="services-list-item">
-                <img src={paintbrush} alt="" />
-                <p>Interior Wall Painting</p>
+                <p>Eavestroughs</p>
               </div>
             </div>
             <h5>Have something else in mind? Ask us about it!</h5>
-            <a href="#contact">
+            <a href="#process-intro">
             <button className="button1-dark">Get a Free Estimate</button>
             </a>
           </div>
@@ -382,21 +386,21 @@ function App() {
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <a href="#contact"><button className="button1">Free Quote</button></a>
+                  <a href="#process-intro"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialtools} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <a href="#contact"><button className="button1">Free Quote</button></a>
+                  <a href="#process-intro"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialwall} alt="" />
               </div>
               <div className="services-img">
                 <div className="services-img-overlay">
                   <h4>Commercial Painting Services</h4>
-                  <a href="#contact"><button className="button1">Free Quote</button></a>
+                  <a href="#process-intro"><button className="button1">Free Quote</button></a>
                 </div>
                 <img src={commercialhouse} alt="" />
               </div>
@@ -438,9 +442,13 @@ function App() {
                   <img src={paintbrush} alt="" />
                   <p>Restaurants and Hospitality</p>
                 </div>
+                <div className="services-list-item">
+                  <img src={paintbrush} alt="" />
+                  <p>Shopping Centres</p>
+                </div>
               </div>
               <h5>Have something else in mind? Ask us about it!</h5>
-              <a href="#contact">
+              <a href="#process-intro">
                 <button className="button1-dark">Get a Free Estimate</button>
               </a>
             </div>
@@ -449,21 +457,33 @@ function App() {
         {/* Process Intro Section */}
         <section id="process-intro">
           <div className="process-intro-text">
-          <img src={logosmall} alt=""/>
+          {/* <img src={logosmall} alt=""/>
               <h2>Our Painting Process </h2>
               <p>Our company values are evident in our painting process. From estimate to cleanup, ThieLot Painting prioritizes the needs of our customers.</p>
               <h4>Want to Hear More?</h4>
               <a href="tel:5198599458">
                 <button className="button1-dark">Call Us Now</button>
-              </a>
+              </a> */}
+              <h3>
+              ThieLot Painting Offers the Highest Standard of <span className="free-estimate-emphasis">Professionalism</span> and
+              <span className="free-estimate-emphasis"> Quality</span>
+            </h3>
+            <h4>
+              Doing the project properly the first time, every time.
+            </h4>
+            <p>Call now to discuss your project and receive a free, no-obligation estimate. We would love to hear from you!</p><br/>
+            <a href="tel:5198599458">
+              <button className="button1">Call Now</button>
+            </a>
           </div>
+         
           <div>
           <img src={collage} alt=""/>
           </div>
           
         </section>
         {/* Process Section 1*/}
-        <section className="process process1">
+        {/* <section className="process process1">
           <div className="process-sub">
             <div className="process-sub-img">
               <img src={estimate} alt=""/>
@@ -473,10 +493,10 @@ function App() {
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Process Section 2*/}
-        <section className="process process2">
+        {/* <section className="process process2">
           <div className="process-sub2">
             <div>
               <h3>Preparing to Paint</h3>
@@ -486,10 +506,10 @@ function App() {
               <img src={prep} alt=""/>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Process Section 3*/}
-        <section className="process process1">
+        {/* <section className="process process1">
           <div className="process-sub">
             <div className="process-sub-img">
               <img src={painting} alt=""/>
@@ -499,24 +519,24 @@ function App() {
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
          {/* Process Section 4*/}
-         <section className="process process2">
-          <div className="process-sub2">
-            <div>
-              <h3>Cleaning Up</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+          {/* <section className="process process2">
+            <div className="process-sub2">
+              <div>
+                <h3>Cleaning Up</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus sapien, nec commodo risus. Praesent venenatis cursus justo, vitae molestie nibh accumsan sollicitudin. Vestibulum faucibus eget ex ut fringilla. Quisque vulputate rhoncus nisl et consectetur. In iaculis scelerisque auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eros ante, tempus ut eleifend sit amet, eleifend at quam. Maecenas ornare pulvinar tellus, id pharetra mi pellentesque in.</p>
+              </div>
+              <div className="process-sub-img">
+                <img src={prep} alt=""/>
+              </div>
             </div>
-            <div className="process-sub-img">
-              <img src={prep} alt=""/>
-            </div>
-          </div>
-        </section>
+          </section> */}
         {/* Contact Section */}
-         <section className="contact-section" id="contact">
+         {/* <section className="contact-section" id="contact">
           <Contact />
-        </section> 
+        </section>  */}
       </main>
       <footer>
         <div className="to-top">
@@ -583,7 +603,7 @@ function App() {
             </div>
           </div>
         </div>
-        <p>	&copy;2022 ThieLot Painting</p>
+        <p>	&copy;2023 ThieLot Painting</p>
       </footer>
     </div>
   );

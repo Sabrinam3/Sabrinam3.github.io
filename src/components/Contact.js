@@ -43,16 +43,16 @@ export default function Contact() {
     }
   };
 
-  const changeFormSelection = (e) => {
-    if (e === "Next") {
-      document.getElementById("form-stage1").style.display = "none";
-      document.getElementById("form-stage2").style.display = "block";
-    } else if (e === "Previous") {
-      document.getElementById("form-stage1").style.display = "block";
-      document.getElementById("form-stage2").style.display = "none";
-      setFormStatus("");
-    }
-  };
+  // const changeFormSelection = (e) => {
+  //   if (e === "Next") {
+  //     document.getElementById("form-stage1").style.display = "none";
+  //     document.getElementById("form-stage2").style.display = "block";
+  //   } else if (e === "Previous") {
+  //     document.getElementById("form-stage1").style.display = "block";
+  //     document.getElementById("form-stage2").style.display = "none";
+  //     setFormStatus("");
+  //   }
+  // };
 
   const validateForm = () => {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -125,42 +125,10 @@ export default function Contact() {
     <h4>Ready to Make a Change?</h4>
     <h3>Submit a Service Inquiry</h3>
       <div id="form-stage1">
-        <h5>Step 1 - Tell us About Your Project(optional)</h5>
-        <div className="form-box">
-          <ToggleButtons
-            options={paintOptions1}
-            label={"What Type of Property Needs Painting?"}
-            alignment={jobType}
-            setAlignment={setJobType}
-          />
-        </div>
-        <div className="form-box">
-          <ToggleButtons
-            options={paintOptions2}
-            label={"What Needs Painting?"}
-            alignment={jobDetail}
-            setAlignment={setJobDetail}
-          />
-        </div>
-        <div className="form-btn-box">
-          <button
-            className="button4"
-            value="Next"
-            onClick={(e) => changeFormSelection(e.target.value)}
-          >
-            Next
-          </button>
-        </div>
-      </div>
-      <div id="form-stage2">
-        <h5>Step 2 - Tell Us How To Reach You</h5>
-        <ToggleSwitch
-          onToggleChange={onToggleChange}
-          phoneSelected={phoneSelected}
-        />
-        <div className="form-box">
+      <div className="form-box">
           <TextField
-            sx={{ input: { color: 'white' } }}
+            sx={{ input: { color: 'white' }, fieldset: { borderColor: "#FAF9F6" } }}
+           
             type="text"
             value={name}
             variant="outlined"
@@ -175,9 +143,16 @@ export default function Contact() {
           />
         </div>
 
+          <h5>Tell Us How To Reach You</h5>
+
+        <ToggleSwitch
+          onToggleChange={onToggleChange}
+          phoneSelected={phoneSelected}
+        />
+
         <div className="form-box" id="phone-box">
           <TextField
-            sx={{ input: { color: 'white' } }}
+             sx={{ input: { color: 'white' }, fieldset: { borderColor: "#FAF9F6" } }}
             type="tel"
             value={phone}
             variant="outlined"
@@ -193,7 +168,7 @@ export default function Contact() {
         </div>
         <div className="form-box" id="email-box">
           <TextField
-          sx={{ input: { color: 'white' } }}
+            sx={{ input: { color: 'white' }, fieldset: { borderColor: "#FAF9F6" } }}
             type="email"
             value={email}
             variant="outlined"
@@ -208,13 +183,34 @@ export default function Contact() {
           />
         </div>
 
+          <h5>Tell Us About Your Project (Optional)</h5>
+
+        <div className="form-box">
+        <ToggleButtons
+            options={paintOptions1}
+            alignment={jobType}
+            setAlignment={setJobType}
+            label="What Type Of Property Needs To Be Painted?"
+          />
+        </div>
+       
+        <div className="form-box">
+          <ToggleButtons
+            options={paintOptions2}
+            alignment={jobDetail}
+            setAlignment={setJobDetail}
+            label="What Needs To Be Painted?"
+          />
+        </div>
+
         <div className="form-box">
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">
-              Tell Us More About Your Project (optional)
-            </FormLabel>
             <TextField
-            inputProps={{ style: { color: "white" } }}
+               sx={{
+                fieldset: { borderColor: "white" }
+              }}
+              inputProps={{ style: { color: "white" } }}
+          
               type="text"
               value={message}
               variant="outlined"
@@ -225,17 +221,12 @@ export default function Contact() {
               onInput={(e) => setMessage(e.target.value)}
               error={messageStatus !== ""}
               helperText={messageStatus}
+           
             />
           </FormControl>
         </div>
         <div className="form-btn-box">
-          <button
-            className="button4"
-            value="Previous"
-            onClick={(e) => changeFormSelection(e.target.value)}
-          >
-            Previous
-          </button>
+       
           <button
             className="button4"
             value="Submit"
@@ -245,6 +236,7 @@ export default function Contact() {
           </button>
         </div>
       </div>
+
       <h4 id="form-status">{formStatus}</h4>
     </div>
     </div>

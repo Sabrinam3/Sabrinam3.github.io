@@ -100,7 +100,7 @@ export default function ResponsiveAppBar() {
 
               {/* Contact Us */}
               <MenuItem key={"Contact"} onClick={handleCloseNavMenu}>
-                <a href={"#contact"}>
+                <a href={"#process-intro"}>
                   <Typography textAlign="center">CONTACT US</Typography>
                 </a>
               </MenuItem>
@@ -131,7 +131,7 @@ export default function ResponsiveAppBar() {
             {/* Services*/}
             <BasicMenu mainItem="Services" subItems={services} />
             {/* Contact Us*/}
-            <a href={"#contact"}>
+            <a href={"#process-intro"}>
               <Button
                 key={"contact"}
                 onClick={handleCloseNavMenu}

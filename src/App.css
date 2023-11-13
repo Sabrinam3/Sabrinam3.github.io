@@ -747,7 +747,6 @@ main{
 }
 
 #process-intro h4{
-  color: var(--tp-accent-dark);
   margin: 1em 0;
 }
 
@@ -853,7 +852,8 @@ main{
   font-size: 0.8em;
 }
 .form-section h5{
-  text-align: center;
+  text-align: left;
+  margin-top: 2em;
 }
 .form-section{
   width:50%;
@@ -870,7 +870,7 @@ main{
   margin: 0.5em 0;
 }
 .form-box{
-  margin-top: 1em;
+  margin-top: 0.5em;
   display: flex;
   justify-content: center;
 }
@@ -928,7 +928,16 @@ main{
 .MuiGrid-item{
   color: white;
   font-size: 0.7em;
+}
 
+.form-toggle-label{
+  color: white;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0;
 }
 
 .MuiSwitch-thumb{
@@ -937,6 +946,7 @@ main{
 .MuiSwitch-track{
   background-color: var(--tp-accent-dark) !important;
 }
+
 
 /* ==================FOOTER SECTION ================== */
 footer{

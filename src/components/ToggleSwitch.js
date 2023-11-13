@@ -3,6 +3,7 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Grid from "@mui/material/Grid";
+import { FormLabel } from "react-bootstrap";
 
 export default function ToggleSwitch(props) {
   return (
